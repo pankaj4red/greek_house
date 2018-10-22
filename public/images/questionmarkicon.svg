@@ -1,0 +1,10 @@
+<?xml version="1.0"?><svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <title>Question Mark (thiner border)</title>
+ <metadata id="metadata7">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#ffffff" fill-rule="evenodd" stroke="#1e96dc" stroke-width="10" stroke-miterlimit="4" stroke-dashoffset="0" id="path2182" d="m363.136719,187.505249a173.708023,173.708023 0 1 1-347.416014,0a173.708023,173.708023 0 1 1347.416014,0z"/>
+  <path fill="#1e96dc" fill-rule="evenodd" stroke-width="2.5" stroke-miterlimit="4" stroke-dashoffset="0" id="path1307" d="m347.142853,187.790771a157.642853,157.642853 0 1 1-315.285713,0a157.642853,157.642853 0 1 1315.285713,0z"/>
+  <text xml:space="preserve" text-anchor="middle" font-family="Arial" font-size="300px" id="svg_1" y="297" x="188" stroke-width="1px" fill="#fcffff">?</text>
+ </g>
+</svg>

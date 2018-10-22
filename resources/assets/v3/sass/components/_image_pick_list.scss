@@ -1,0 +1,50 @@
+ul.image-pick-list {
+  list-style-type: none;
+  margin: 16px 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-bottom: 5px;
+
+    a {
+      cursor: pointer;
+
+      span {
+        display: inline-block;
+        border: 2px solid #cccccc;
+
+        img {
+          height: 70px;
+          opacity: 0.6;
+        }
+      }
+
+      &:hover, &:active, &:focus {
+        span {
+          border-color: #ee2761;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &.active {
+      span {
+        border-color: #ee2761;
+
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+ul.image-pick-list.vertical li a span img {
+  height: auto;
+  width: 70px;
+}

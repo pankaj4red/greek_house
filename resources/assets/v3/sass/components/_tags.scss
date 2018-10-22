@@ -1,0 +1,212 @@
+.tag-campaign-id {
+  background: $blue;
+  border-radius: 4px;
+  color: #fff !important;
+  display: inline-block;
+  padding: 8px 20px;
+
+  &:hover, &:active, &:focus {
+    color: #fff;
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.tag-user {
+  padding-left: 28px;
+  position: relative;
+  line-height: 21px;
+  height: 21px;
+  display: inline-block;
+
+  &.tag-user-customer {
+    background: transparent url(/images/icon-user-red.png) no-repeat;
+  }
+
+  &.tag-user-sales_rep {
+    background: transparent url(/images/icon-user-red.png) no-repeat;
+  }
+
+  &.tag-user-manager {
+    background: transparent url(/images/icon-user-manager.png) no-repeat;
+  }
+
+  &.tag-user-fulfillment {
+    background: transparent url(/images/icon-user-manager.png) no-repeat;
+  }
+
+  &.tag-user-decorator {
+    background: transparent url(/images/icon-user-manager.png) no-repeat;
+  }
+
+  &.tag-user-designer {
+    background: transparent url(/images/icon-user-manager.png) no-repeat;
+  }
+
+  &.tag-user-admin {
+    background: transparent url(/images/icon-user-manager.png) no-repeat;
+  }
+
+  &.tag-user-account_manager {
+    background: transparent url(/images/icon-user-manager.png) no-repeat;
+  }
+
+  &.tag-user-none {
+    padding-left: 0;
+  }
+}
+
+.tag-date {
+  padding-left: 20px;
+  position: relative;
+
+  &:before {
+    margin-top: -17px;
+    content: url(/images/clocksmall.png);
+    left: 0;
+    position: absolute;
+    top: 15px;
+  }
+}
+
+.tag-state {
+  font-weight: normal;
+  padding-left: 30px;
+  text-decoration: none;
+  line-height: 21px;
+  height: 21px;
+  display: inline-block;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+
+  &.tag-state-campus_approval {
+    background: transparent url(/images/icon-watch.png) no-repeat;
+  }
+
+  &.tag-state-awaiting_design {
+    background: transparent url(/images/icon-watch-blue.png) no-repeat;
+  }
+
+  &.tag-state-on_hold {
+    background: transparent url(/images/icon-watch-blue.png) no-repeat;
+  }
+
+  &.tag-state-awaiting_approval {
+    background: transparent url(/images/icon-watch.png) no-repeat;
+  }
+
+  &.tag-state-revision_requested {
+    background: transparent url(/images/icon-watch-blue.png) no-repeat;
+  }
+
+  &.tag-state-awaiting_quote {
+    background: transparent url(/images/icon-comma.png) no-repeat;
+  }
+
+  &.tag-state-collecting_payment {
+    background: transparent url(/images/icon-dollar.png) no-repeat;
+  }
+
+  &.tag-state-processing_payment {
+    background: transparent url(/images/icon-dollar.png) no-repeat;
+  }
+
+  &.tag-state-fulfillment_ready {
+    background: transparent url(/images/icon-direction.png) no-repeat;
+  }
+
+  &.tag-state-fulfillment_artwork {
+    background: transparent url(/images/icon-direction.png) no-repeat;
+  }
+
+  &.tag-state-fulfillment_validation {
+    background: transparent url(/images/icon-direction.png) no-repeat;
+  }
+
+  &.tag-state-fulfillment_garment {
+    background: transparent url(/images/icon-direction.png) no-repeat;
+  }
+
+  &.tag-state-printing {
+    background: transparent url(/images/icon-direction.png) no-repeat;
+  }
+
+  &.tag-state-shipped {
+    background: transparent url(/images/icon-direction.png) no-repeat;
+  }
+
+  &.tag-state-delivered {
+    background: transparent url(/images/icon-direction.png) no-repeat;
+  }
+
+  &.tag-state-cancelled {
+    background: transparent url(/images/icon-cross.png) no-repeat;
+  }
+}
+
+.action-required {
+  color: red;
+}
+
+.tag-views {
+  font-weight: normal;
+  padding-left: 30px;
+  text-decoration: none;
+  line-height: 21px;
+  height: 21px;
+  display: inline-block;
+  background: transparent url(/images/icon-eye.png) no-repeat;
+  background-position: center left;
+}
+
+.tag-delivery-date {
+  padding-left: 28px;
+  position: relative;
+
+  &:before {
+    margin-top: -17px;
+    content: url(/images/icon-direction.png);
+    left: 0;
+    position: absolute;
+    top: 16px;
+  }
+}
+
+.tag-action {
+  padding: 3px 0 3px 23px;
+  position: relative;
+  background-position: left center !important;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+
+  &.tag-action-grab {
+    display: inline-block;
+    background: transparent url(/images/grab-icon.png) no-repeat;
+  }
+
+  &.tag-action-reject {
+    display: inline-block;
+    background: transparent url(/images/icon-cross.png) no-repeat;
+  }
+
+  &.tag-action-upload-designs {
+    background: transparent url(/images/grab-icon.png) no-repeat;
+  }
+
+  &.tag-action-upload-prints {
+    background: transparent url(/images/grab-icon.png) no-repeat;
+  }
+
+  &.tag-action-quote {
+    background: transparent url(/images/grab-icon.png) no-repeat;
+  }
+
+  &.tag-action-approve {
+    background: transparent url(/images/grab-icon.png) no-repeat;
+  }
+}
+

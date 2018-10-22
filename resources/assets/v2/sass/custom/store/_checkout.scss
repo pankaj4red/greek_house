@@ -1,0 +1,116 @@
+.page.checkout {
+  h3.gh-title {  margin-bottom: 60px; }
+  h5.gh-subtitle { font-weight: 500; margin-bottom: 40px; }
+  .checkout__section { margin-top: 60px; }
+}
+
+.checkout__submit {
+  text-align: center;
+  margin: 50px 0;
+  .gh-btn {margin-left: 0;}
+}
+
+/* todo copy of styles from campaign page need to be restructured later */
+.checkout__shipping {
+  color: #363636;
+  @include font-size(14px);
+
+  h5 {
+    @include font-size(18px);
+    color: #727272;
+  }
+}
+
+/* todo below is a copy of styles from campaign page -> need to be restructured later */
+.checkout__terms {
+  @include font-size(16px);
+  margin: 20px 0;
+  color: #6f6f6f;
+  text-align: center;
+
+  .terms__checkbox {
+    margin-top: 6px;
+
+    .greekhouse-checkbox:not(:checked),
+    .greekhouse-checkbox:checked {
+
+      + label {
+        @include font-size(16px);
+        color: #6f6f6f;
+        font-weight: 400;
+        padding-left: 24px;
+      }
+
+      + label:before, + label:after {
+        top: 2px;
+        width: 20px;
+        height: 20px;
+      }
+
+      + label:before {
+        border: 1px solid #86939e;
+      }
+
+      + label:after {
+        border: 1px solid #e1e8ee;
+        background: #e1e8ee url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0nMTQnIHZpZXdCb3g9JzAgMCAxNCAxNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48dGl0bGU+d2hpdGU8L3RpdGxlPjxwYXRoIGQ9J001LjM3OCAxMS4zN0wyIDcuNTlsMS40MzgtMS4yODZMNS4zNzQgOC40N2w1LjE4NS01Ljg0TDEyIDMuOTFsLTYuNjIyIDcuNDYnIGZpbGw9JyM4NjkzOWUnLz48L3N2Zz4=) center center no-repeat;
+        background-size: 80%;
+      }
+    }
+  }
+}
+
+.checkout__payment {
+  .payment__type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    label { margin-right: 20px;}
+
+    .type__icon {
+      display: inline-block;
+      margin-left: 20px;
+      width: 50px;
+
+      &.discover {
+        width: 70px;
+        margin-left: 0;
+      }
+
+      img {  max-width: 100%;  }
+    }
+  }
+
+  .payment__expiration {
+    .form-group { margin-bottom: 15px;}
+  }
+
+  .payment__card-number {
+    .form-group { margin-bottom: 45px;}
+  }
+
+  .payment__shipping {
+
+    //margin-top: 20px;
+
+    h6.gh-subtitle {
+      @include font-size(18px);
+      margin-top: 20px;
+    }
+
+    .shipping__option {
+      margin-top: 20px;
+
+      .colored-radio:not(:checked),
+      .colored-radio:checked {
+        + label {
+          @include font-size(17px);
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

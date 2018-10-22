@@ -1,0 +1,138 @@
+.checkout-block {
+  margin-bottom: 16px;
+}
+
+.checkout-product-list {
+  list-style-type: none;
+  margin: 16px 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    width: 20%;
+    padding-right: 5px;
+
+    .checkout-product-image-link {
+      cursor: pointer;
+
+      .checkout-product-image-wrapper {
+        display: inline-block;
+        border: 2px solid #cccccc;
+
+        .checkout-product-image {
+          width: 100%;
+          opacity: 0.6;
+        }
+      }
+
+      &:hover, &:active, &:focus {
+        .checkout-product-image-wrapper {
+          border-color: #ee2761;
+
+          .checkout-product-image {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &.active {
+      .checkout-product-image-wrapper {
+        border-color: #ee2761;
+
+        .checkout-product-image {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.checkout-color-list {
+  list-style-type: none;
+  margin: 16px 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 5px;
+
+    .checkout-color-image-link {
+      cursor: pointer;
+
+      .checkout-color-image-wrapper {
+        display: inline-block;
+        border: 1px solid #cccccc;
+        width: 36px;
+        height: 36px;
+        padding: 3px;
+        border-radius: 18px;
+
+        .checkout-color-image {
+          width: 28px;
+          border-radius: 14px;
+        }
+      }
+
+      &:hover, &:active, &:focus {
+        .checkout-color-image-wrapper {
+          border-color: #ee2761;
+        }
+      }
+    }
+
+    &.active {
+      .checkout-color-image-wrapper {
+        border-color: #ee2761;
+      }
+    }
+  }
+}
+
+.checkout-area-list {
+  list-style-type: none;
+  margin: 16px 0 0 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 5px;
+
+    .checkout-area-image-link {
+      cursor: pointer;
+
+      .checkout-area-image-wrapper {
+        display: inline-block;
+        border: 2px solid #cccccc;
+
+        .checkout-area-image {
+          width: 100%;
+          opacity: 0.6;
+        }
+      }
+
+      &:hover, &:active, &:focus {
+        .checkout-area-image-wrapper {
+          border-color: #ee2761;
+
+          .checkout-area-image {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &.active {
+      .checkout-area-image-wrapper {
+        border-color: #ee2761;
+
+        .checkout-area-image {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.copy-to-clipboard-content {
+  font-size: $font-size-xs;
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: #bdbdbd;
+  border: 1px solid #bdbdbd;
+  border-right: 0 rgb(189, 189, 189);
+  border-radius: 6px 0 0 6px;
+  padding: 7px 0 5px 10px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.copy-to-clipboard-button {
+  font-size: $font-size-xxs;
+  text-transform: uppercase;
+  color: #fff;
+  background: #7d7d7d;
+  border-radius: 0 6px 6px 0;
+  padding: 0 20px;
+  line-height: 35px;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}

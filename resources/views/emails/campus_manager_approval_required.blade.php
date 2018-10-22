@@ -1,0 +1,1 @@
+<a href="{{ route('dashboard::details', [$campaign->id]) }}">{{ route('dashboard::details', [$campaign->id]) }}</a>

@@ -1,0 +1,23 @@
+@mixin font-color-blue {
+  color: $color-blue;
+}
+
+@mixin font-color-white {
+  color: $color-white;
+}
+
+@mixin font-color-black {
+  color: $color-black;
+}
+
+@mixin font-color-slate-grey {
+  color: $color-slate-grey;
+}
+
+@mixin font-color-space-grey {
+  color: $color-space-grey;
+}
+
+@mixin font-color-soft-green {
+  color: $color-soft-green;
+}

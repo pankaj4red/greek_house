@@ -1,0 +1,61 @@
+#gh-module-popup {
+  .modal-body {
+    padding: 0;
+
+    &.loading {
+      text-align: center;
+      padding: 100px 0;
+
+      &:before {
+        content: '\f1ce';
+        display: inline-block;
+        font-size: 40px;
+        color: $color-blue-darker;
+        font-family: 'FontAwesome';
+        animation: fa-spin 2s infinite linear;
+      }
+    }
+
+
+    .module-popup {
+      .module-header {
+        position: relative;
+        padding: 20px 40px;
+        border-color: #e1e7f0;
+        display: flex;
+        -webkit-box-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        border-bottom: 1px solid #e9ecef;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+
+        .module-title {
+          font-family: "Avenir Next W1G", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 0.05rem;
+          font-size: 1.23076923rem;
+          font-weight: 500;
+          color: #279bd4;
+          margin-bottom: 0;
+          line-height: 1.5;
+        }
+
+        .close {
+          position: absolute;
+          top: 21px;
+          right: 23px;
+        }
+      }
+      .module-body {
+        padding: 24px 40px;
+      }
+    }
+  }
+}
+
+.module-loading {
+  display: block;
+  margin: 40px auto;
+}

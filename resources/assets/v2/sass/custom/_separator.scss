@@ -1,0 +1,13 @@
+.separator-small {
+  @extend .mt-5;
+  @extend .mb-5;
+  width: 70px;
+  border-bottom: 1px solid #333;
+
+}
+.separator-medium-gray{
+  @extend .mt-5;
+  @extend .mb-5;
+  width: 70px;
+  border-bottom: 3px solid #959595;
+}

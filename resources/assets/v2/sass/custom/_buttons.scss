@@ -1,0 +1,212 @@
+@mixin button {
+  @include font-family-avenir;
+  @include font-size-regular;
+  @include font-spacing(0.8px);
+  padding: 7px 18px;
+  border-radius: 5px;
+}
+
+@mixin button-square {
+  border-radius: 0;
+}
+
+@mixin button-transparent($color, $colorHover) {
+  @include button;
+  background: transparent;
+  color: $color;
+  border: 2px solid $color;
+
+  &:hover, &:active, &:focus {
+    background: $colorHover;
+    outline: 0;
+  }
+}
+
+@mixin button-filled($color, $colorBackground, $colorHover, $colorBackgroundHover) {
+  @include button;
+  background: $colorBackground;
+  color: $color;
+  border: 2px solid $colorBackground;
+
+  &:hover, &:active, &:focus {
+    color: $colorHover;
+    border-color: $colorBackgroundHover;
+    background-color: $colorBackgroundHover;
+    outline: 0;
+  }
+}
+
+@mixin button-outline($color, $colorBackground, $colorOutline, $colorHover, $colorBackgroundHover, $colorOutlineHover) {
+  @include button;
+  background: $colorBackground;
+  color: $color;
+  border: 2px solid $colorOutline;
+
+  &:hover, &:active, &:focus {
+    color: $colorHover;
+    background-color: $colorBackgroundHover;
+    border-color: $colorOutlineHover;
+    outline: 0;
+  }
+}
+
+@mixin button-outline-thin($color, $colorBackground, $colorOutline, $colorHover, $colorBackgroundHover, $colorOutlineHover) {
+  @include button;
+  background: $colorBackground;
+  color: $color;
+  border: 1px solid $colorOutline;
+
+  &:hover, &:active, &:focus {
+    color: $colorHover;
+    background-color: $colorBackgroundHover;
+    border-color: $colorOutlineHover;
+    outline: 0;
+  }
+}
+
+@mixin button-large {
+  @include font-size-large;
+  padding: 16px 30px;
+}
+
+.btn.btn-green-transparent-square {
+  @include button-transparent($color-soft-green, $color-soft-green-filler);
+  @include button-square;
+}
+
+.btn.btn-white-transparent {
+  @include button-transparent($color-white, $color-blue);
+}
+
+.btn.btn-blue {
+  @include button-filled($color-white, $color-blue-darker, $color-white, $color-blue-darker2);
+}
+
+.btn.btn-blue-transparent {
+  @include button-transparent($color-blue, $color-blue-lighter);
+}
+
+.btn.btn-green {
+  @include button-filled($white, $color-soft-green, $white, $color-soft-green-darker);
+}
+
+.btn.btn-green-large {
+  @include button-filled($white, $color-soft-green, $white, $color-soft-green-darker);
+  @include button-large;
+}
+
+.btn.btn-white-transparent {
+  @include button-transparent($color-white, $color-blue);
+}
+
+.btn.btn-white-black {
+  @include button-outline($color-black, $color-white, $color-mid-grey, $color-black, $color-grey, $color-mid-grey);
+}
+
+.btn.btn-white {
+  @include button-outline($color-black, $color-white, $color-black, $color-black, $color-grey, $color-black);
+}
+
+.btn.btn-large {
+  @include button-large;
+}
+
+.btn {
+  vertical-align: baseline;
+}
+
+.gh-btn {
+  @include font-size(18px);
+  display: inline-block;
+  padding: 12px 42px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+
+  @include media-breakpoint-down(sm) {
+    @include font-size(18px);
+    padding: 8px 12px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  &.blue {
+    background: $color-blue-v2;
+    border: 1px solid $color-blue-v2;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: $color-blue-v2;
+    }
+  }
+
+  &.blue-transparent {
+    background: #fff;
+    border: 1px solid $color-blue-v2;
+    color: $color-blue-v2;
+
+    &:hover {
+      background: $color-blue-v2;
+      color: #fff;
+    }
+  }
+
+  &.green {
+    background: #5bb14a;
+    border: 1px solid #5bb14a;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: #5bb14a;
+    }
+  }
+
+  &.grey-transparent {
+    background: #fff;
+    border: 1px solid $color-space-grey;
+    color: $color-space-grey;
+
+    &:hover {
+      background: $color-space-grey;
+      color: #fff;
+    }
+  }
+
+  &:disabled {
+    //background-color: $color-light-grey;
+    //color: $color-black;
+    opacity: 0.5;
+
+    &:hover, &:active, &:focus {
+      //background-color: $color-light-grey;
+      //color: $color-black;
+      opacity: 0.5;
+    }
+
+    &:after {
+      content: '\f1ce';
+      display: inline-block;
+      font-family: 'FontAwesome';
+      animation: fa-spin 2s infinite linear;
+      margin-left: 10px;
+    }
+  }
+}
+
+.gh-btn + .gh-btn {
+  margin-left: 20px;
+}
+
+.gh-btn.btn-short {
+  padding: 12px 20px !important;
+}

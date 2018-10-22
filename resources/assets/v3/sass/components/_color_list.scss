@@ -1,0 +1,25 @@
+.color-list {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+  font-size: 0;
+
+  li {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 2px;
+    margin-bottom: 2px;
+  }
+
+  img {
+    border: 2px solid transparent;
+    border-radius: 7px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+
+  a.active img {
+    border-color: rgb(58, 57, 57);
+  }
+}

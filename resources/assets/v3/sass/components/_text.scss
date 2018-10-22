@@ -1,0 +1,170 @@
+h1, .h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $font-primary;
+  letter-spacing: 6.5px;
+}
+
+h2, .h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $font-primary;
+  letter-spacing: 6.5px;
+}
+
+h3, .h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $font-primary;
+  letter-spacing: 6.5px;
+}
+
+h4, .h4 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $font-primary;
+  letter-spacing: 2px;
+}
+
+h5, .h5 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+
+h6, .h6 {
+  font-family: $font-avenir-w1g;
+  font-weight: 700;
+}
+
+.text-xl {
+  font-size: $font-size-xl !important;
+}
+
+.text-lg {
+  font-size: $font-size-lg !important;
+}
+
+.text-reg {
+  font-size: $font-size-base !important;
+}
+
+.text-sm {
+  font-size: $font-size-sm !important;
+}
+
+.text-xs {
+  font-size: $font-size-xs !important;
+  line-height: $font-size-xs !important;
+}
+
+.text-xxs {
+  font-size: $font-size-xxs !important;
+  line-height: $font-size-xxs !important;
+}
+
+.text-small {
+  @extend .text-sm;
+}
+
+.title-underline {
+  padding-bottom: 10px;
+  border-bottom: 3px solid $ui-primary;
+  display: inline-block;
+}
+
+hr.short-blue {
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-bottom: 3px solid #00a4d8;
+}
+
+hr.long-gray {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.h4-line {
+  font-family: Rockwell,Courier New,Courier,Georgia,Times,Times New Roman,serif;
+  color: #00a4d8;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2rem;
+
+  &:before, &:after {
+    width: calc(50% - 85px);
+    top: .6em;
+    border-bottom: 1px solid #00a4d8;
+    content: "";
+    position: absolute;
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+
+  &.sp-1 {
+    &:before, &:after {
+      width: calc(50% - 85px);
+    }
+  }
+
+  &.sp-2 {
+    &:before, &:after {
+      width: calc(50% - 106px);
+    }
+  }
+}
+
+.color-slate {
+  color: $gray-600 !important;
+}
+
+.color-black {
+  color: #212529 !important;
+}
+
+.color-blue {
+  color: #279bd4 !important;
+}
+
+.color-red {
+  color: #ff0000 !important;
+}
+
+.color-green {
+  color: #76b450 !important;
+}
+
+.no-text {
+  font-size: 0;
+}
+
+.sub-title {
+  @extend .color-black, .text-uppercase;
+
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.text-spacing-1 {
+  letter-spacing: 0.1rem;
+}
+
+.overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rockwell {
+  font-family: Rockwell,Courier New,Courier,Georgia,Times,Times New Roman,serif;
+}

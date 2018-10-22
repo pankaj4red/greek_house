@@ -1,0 +1,193 @@
+<?php
+
+class UserTypeSeeder extends BaseSeeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        user_type_repository()->create([
+            'code'                      => 'admin',
+            'caption'                   => 'Admin',
+            'is_staff'                  => true,
+            'is_admin'                  => true,
+            'is_designer'               => false,
+            'is_support'                => true,
+            'is_director'               => true,
+            'is_decorator'              => false,
+            'can_see_full_names'        => true,
+            'can_see_all_campaigns'     => true,
+            'can_access_admin'          => true,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => true,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'product_manager',
+            'caption'                   => 'Product Manager',
+            'is_staff'                  => true,
+            'is_admin'                  => false,
+            'is_designer'               => false,
+            'is_support'                => false,
+            'is_director'               => false,
+            'is_decorator'              => false,
+            'can_see_full_names'        => true,
+            'can_see_all_campaigns'     => true,
+            'can_access_admin'          => true,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => false,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'product_qa',
+            'caption'                   => 'Product QA',
+            'is_staff'                  => true,
+            'is_admin'                  => false,
+            'is_designer'               => false,
+            'is_support'                => false,
+            'is_director'               => false,
+            'is_decorator'              => false,
+            'can_see_full_names'        => true,
+            'can_see_all_campaigns'     => true,
+            'can_access_admin'          => true,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => false,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'support',
+            'caption'                   => 'Support',
+            'is_staff'                  => true,
+            'is_admin'                  => false,
+            'is_designer'               => false,
+            'is_support'                => true,
+            'is_director'               => false,
+            'is_decorator'              => false,
+            'can_see_full_names'        => true,
+            'can_see_all_campaigns'     => true,
+            'can_access_admin'          => true,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => true,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'art_director',
+            'caption'                   => 'Art Director ',
+            'is_staff'                  => true,
+            'is_admin'                  => false,
+            'is_designer'               => true,
+            'is_support'                => false,
+            'is_director'               => true,
+            'is_decorator'              => false,
+            'can_see_full_names'        => true,
+            'can_see_all_campaigns'     => true,
+            'can_access_admin'          => false,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => true,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'designer',
+            'caption'                   => 'Designer',
+            'is_staff'                  => true,
+            'is_admin'                  => false,
+            'is_designer'               => true,
+            'is_support'                => false,
+            'is_director'               => false,
+            'is_decorator'              => false,
+            'can_see_full_names'        => true,
+            'can_see_all_campaigns'     => false,
+            'can_access_admin'          => false,
+            'sees_customer_quick_quote' => true,
+            'sees_support_quick_quote'  => false,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'junior_designer',
+            'caption'                   => 'Junior Designer',
+            'is_staff'                  => true,
+            'is_admin'                  => false,
+            'is_designer'               => true,
+            'is_support'                => false,
+            'is_director'               => false,
+            'is_decorator'              => false,
+            'can_see_full_names'        => true,
+            'can_see_all_campaigns'     => false,
+            'can_access_admin'          => false,
+            'sees_customer_quick_quote' => true,
+            'sees_support_quick_quote'  => false,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'decorator',
+            'caption'                   => 'Decorator',
+            'is_staff'                  => false,
+            'is_admin'                  => false,
+            'is_designer'               => false,
+            'is_support'                => false,
+            'is_director'               => false,
+            'is_decorator'              => true,
+            'can_see_full_names'        => false,
+            'can_see_all_campaigns'     => false,
+            'can_access_admin'          => false,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => false,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'sales_rep',
+            'caption'                   => 'Campus Ambassador',
+            'is_staff'                  => false,
+            'is_admin'                  => false,
+            'is_designer'               => false,
+            'is_support'                => false,
+            'is_director'               => false,
+            'is_decorator'              => false,
+            'can_see_full_names'        => false,
+            'can_see_all_campaigns'     => false,
+            'can_access_admin'          => false,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => false,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'account_manager',
+            'caption'                   => 'Campus Manager',
+            'is_staff'                  => false,
+            'is_admin'                  => false,
+            'is_designer'               => false,
+            'is_support'                => false,
+            'is_director'               => false,
+            'is_decorator'              => false,
+            'can_see_full_names'        => false,
+            'can_see_all_campaigns'     => false,
+            'can_access_admin'          => false,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => false,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'customer',
+            'caption'                   => 'Customer',
+            'is_staff'                  => false,
+            'is_admin'                  => false,
+            'is_designer'               => false,
+            'is_support'                => false,
+            'is_director'               => false,
+            'is_decorator'              => false,
+            'can_see_full_names'        => false,
+            'can_see_all_campaigns'     => false,
+            'can_access_admin'          => false,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => false,
+        ]);
+        user_type_repository()->create([
+            'code'                      => 'placeholder',
+            'caption'                   => 'Placeholder',
+            'is_staff'                  => false,
+            'is_admin'                  => false,
+            'is_designer'               => false,
+            'is_support'                => false,
+            'is_director'               => false,
+            'is_decorator'              => false,
+            'can_see_full_names'        => false,
+            'can_see_all_campaigns'     => false,
+            'can_access_admin'          => false,
+            'sees_customer_quick_quote' => false,
+            'sees_support_quick_quote'  => false,
+        ]);
+    }
+}

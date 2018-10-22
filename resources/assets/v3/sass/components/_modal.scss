@@ -1,0 +1,28 @@
+.modal {
+  .modal-header {
+    padding: 20px 20px 20px 40px;
+    border-color: $gray-200;
+  }
+
+  .modal-title {
+    font-family: $font-avenir-w1g;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $font-primary;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+
+  .close {
+    padding: 1px 0 0 0;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+}
+
+.modal-loading {
+  margin: 24px auto;
+  display: block;
+}

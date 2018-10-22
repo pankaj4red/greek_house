@@ -1,0 +1,85 @@
+@function width-calc($multiplier) {
+  @return round(($multiplier+3)/4 * 85px);
+}
+
+.title-standard {
+  @include rockwell-large-header;
+}
+
+.title-lined {
+  @include rockwell-small-header;
+  position: relative;
+  margin-bottom: 2rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid $color-blue;
+    width: calc(50% - 85px);
+    top: 0.5em;
+    left: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid $color-blue;
+    width: calc(50% - 85px);
+    top: 0.5em;
+    right: 0;
+  }
+
+  .title-lined-text {
+    position: relative;
+    background: inherit;
+  }
+
+  &.line-space-1 {
+    &:after, &:before {
+      width: calc(50% - #{width-calc(1)});
+    }
+  }
+  &.line-space-2 {
+    &:after, &:before {
+      width: calc(50% - #{width-calc(2)});
+    }
+  }
+  &.line-space-3 {
+    &:after, &:before {
+      width: calc(50% - #{width-calc(3)});
+    }
+  }
+  &.line-space-4 {
+    &:after, &:before {
+      width: calc(50% - #{width-calc(4)});
+    }
+  }
+}
+
+.subtitle-text {
+  @include avenir-regular-large;
+}
+
+.title-black {
+  @include rockwell-xs-header;
+}
+
+.separator-short {
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-bottom: 3px solid $color-blue;
+}
+
+.background-grey {
+  background: $color-grey
+}
+
+.background-light-grey {
+  background: $color-light-grey;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}

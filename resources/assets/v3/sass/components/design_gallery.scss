@@ -1,0 +1,114 @@
+.design-gallery-entry {
+  height: 300px;
+
+  img {
+    width: 95%;
+    height: auto;
+    margin: 5px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .design-gallery-entry {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .design-gallery-entry {
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .design-gallery-entry {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .design-gallery-entry {
+    height: 228px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .design-gallery-entry {
+    height: 175px;
+  }
+}
+
+
+.right.carousel-control {
+  float: right;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0);
+}
+
+a.carousel-control {
+  width: 1%;
+  text-shadow: none;
+  background-color: #FFF;
+  box-shadow: none;
+  background: none;
+  background-image: none !important;
+}
+
+.right.carousel-control {
+  float: right;
+  right: 0;
+  left: initial;
+}
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0,0,0,0.5)), to(rgba(0,0,0,0.0001)));
+  background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control:hover, .carousel-control:focus {
+  outline: 0;
+  color: #fff;
+  text-decoration: none;
+  opacity: .9;
+  filter: alpha(opacity=90);
+}
+
+@media screen and (min-width: 1300px) {
+  img.carousel-arrow-left {
+    margin-left: -70px;
+  }
+
+  img.carousel-arrow-right {
+    margin-right: -50px;
+  }
+
+  .dropdown-toggle::after {
+    margin-left: 50px;
+  }
+}
+
+img.carousel-arrow-both {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

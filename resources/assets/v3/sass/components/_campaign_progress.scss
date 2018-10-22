@@ -1,0 +1,102 @@
+.campaign-progress {
+  .campaign-progress-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .campaign-progress-stat {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 4px 26px;
+      border: 1px solid #6b6e72;
+      border-radius: 6px;
+      margin-bottom: 28px;
+
+      .stat-title {
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        color: #838282;
+        margin-right: 10px;
+      }
+
+      .stat-value {
+        font-size: 3rem;
+        color: #279bd4;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .stat-tip {
+        font-size: $font-size-sm;
+        color: #797979;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .campaign-progress-bar {
+    position: relative;
+    border-radius: 4px;
+    background: #dcdfe4;
+    margin: 0 0 40px;
+    height: 16px;
+
+    .progress-success {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: #279bd4;
+      border-radius: 4px;
+    }
+
+    .progress-point {
+      position: absolute;
+      top: -7px;
+
+      &.min {
+        text-align: center;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+
+      &.best {
+        text-align: right;
+        right: 6px;
+      }
+
+      .point-dash {
+        display: inline-block;
+        width: 10px;
+        height: 30px;
+        background: #279bd4;
+        border-radius: 3px;
+      }
+
+      .point-title {
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        color: #279bd4;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .point-title-top-lg {
+    position: relative;
+    top: -60px;
+  }
+
+  .campaign-progress .campaign-progress-bar.campaign-progress-mt-lg {
+    margin-top: 30px;
+  }
+}

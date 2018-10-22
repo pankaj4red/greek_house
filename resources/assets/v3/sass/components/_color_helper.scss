@@ -1,0 +1,143 @@
+$color: $blue;
+$targetColor: #279bd4;
+
+$bestColor: #000000;
+$bestDeviance: 1000;
+$bestTransformation: '';
+
+.color-helper {
+  @for $i from 1 through 20 {
+    $saturation: $i * 5;
+    @for $j from 1 through 20 {
+      $lighten: $j * 5;
+      @for $k from 1 through 20 {
+        $tint: $k * 5;
+        $newColor: tint(lighten(saturate($color, $saturation * 1%), $lighten * 1%), $tint * 1%);
+
+        $devianceRed: abs(red($targetColor) - red($newColor));
+        $devianceBlue: abs(blue($targetColor) - blue($newColor));
+        $devianceGreen: abs(green($targetColor) - green($newColor));
+        $devianceTotal: $devianceRed + $devianceBlue + $devianceGreen;
+        @if ($devianceTotal < $bestDeviance) {
+          $bestColor: $newColor !global;
+          $bestDeviance: $devianceTotal !global;
+          $bestTransformation: 's' + $saturation + 'l' + $lighten + 't' + $tint !global;
+        }
+      }
+      @for $k from 1 through 20 {
+        $shade: $k * 5;
+        $newColor: shade(lighten(saturate($color, $saturation * 1%), $lighten * 1%), $shade * 1%);
+
+        $devianceRed: abs(red($targetColor) - red($newColor));
+        $devianceBlue: abs(blue($targetColor) - blue($newColor));
+        $devianceGreen: abs(green($targetColor) - green($newColor));
+        $devianceTotal: $devianceRed + $devianceBlue + $devianceGreen;
+        @if ($devianceTotal < $bestDeviance) {
+          $bestColor: $newColor !global;
+          $bestDeviance: $devianceTotal !global;
+          $bestTransformation: 's' + $saturation + 'l' + $lighten + 's' + $shade !global;
+        }
+      }
+    }
+    @for $j from 1 through 20 {
+      $darken: $j * 5;
+      @for $k from 1 through 20 {
+        $tint: $k * 5;
+        $newColor: tint(darken(saturate($color, $saturation * 1%), $darken * 1%), $tint * 1%);
+
+        $devianceRed: abs(red($targetColor) - red($newColor));
+        $devianceBlue: abs(blue($targetColor) - blue($newColor));
+        $devianceGreen: abs(green($targetColor) - green($newColor));
+        $devianceTotal: $devianceRed + $devianceBlue + $devianceGreen;
+        @if ($devianceTotal < $bestDeviance) {
+          $bestColor: $newColor !global;
+          $bestDeviance: $devianceTotal !global;
+          $bestTransformation: 's' + $saturation + 'd' + $darken + 't' + $tint !global;
+        }
+      }
+      @for $k from 1 through 20 {
+        $shade: $k * 5;
+        $newColor: shade(darken(saturate($color, $saturation * 1%), $darken * 1%), $shade * 1%);
+
+        $devianceRed: abs(red($targetColor) - red($newColor));
+        $devianceBlue: abs(blue($targetColor) - blue($newColor));
+        $devianceGreen: abs(green($targetColor) - green($newColor));
+        $devianceTotal: $devianceRed + $devianceBlue + $devianceGreen;
+        @if ($devianceTotal < $bestDeviance) {
+          $bestColor: $newColor !global;
+          $bestDeviance: $devianceTotal !global;
+          $bestTransformation: 's' + $saturation + 'd' + $darken + 's' + $shade !global;
+        }
+      }
+    }
+  }
+
+  @for $i from 1 through 20 {
+    $desaturation: $i * 5;
+    @for $j from 1 through 20 {
+      $lighten: $j * 5;
+      @for $k from 1 through 20 {
+        $tint: $k * 5;
+        $newColor: tint(lighten(desaturate($color, $desaturation * 1%), $lighten * 1%), $tint * 1%);
+
+        $devianceRed: abs(red($targetColor) - red($newColor));
+        $devianceBlue: abs(blue($targetColor) - blue($newColor));
+        $devianceGreen: abs(green($targetColor) - green($newColor));
+        $devianceTotal: $devianceRed + $devianceBlue + $devianceGreen;
+        @if ($devianceTotal < $bestDeviance) {
+          $bestColor: $newColor !global;
+          $bestDeviance: $devianceTotal !global;
+          $bestTransformation: 's' + $desaturation + 'l' + $lighten + 't' + $tint !global;
+        }
+      }
+      @for $k from 1 through 20 {
+        $shade: $k * 5;
+        $newColor: shade(lighten(desaturate($color, $desaturation * 1%), $lighten * 1%), $shade * 1%);
+
+        $devianceRed: abs(red($targetColor) - red($newColor));
+        $devianceBlue: abs(blue($targetColor) - blue($newColor));
+        $devianceGreen: abs(green($targetColor) - green($newColor));
+        $devianceTotal: $devianceRed + $devianceBlue + $devianceGreen;
+        @if ($devianceTotal < $bestDeviance) {
+          $bestColor: $newColor !global;
+          $bestDeviance: $devianceTotal !global;
+          $bestTransformation: 's' + $desaturation + 'l' + $lighten + 's' + $shade !global;
+        }
+      }
+    }
+    @for $j from 1 through 20 {
+      $darken: $j * 5;
+      @for $k from 1 through 20 {
+        $tint: $k * 5;
+        $newColor: tint(darken(desaturate($color, $desaturation * 1%), $darken * 1%), $tint * 1%);
+
+        $devianceRed: abs(red($targetColor) - red($newColor));
+        $devianceBlue: abs(blue($targetColor) - blue($newColor));
+        $devianceGreen: abs(green($targetColor) - green($newColor));
+        $devianceTotal: $devianceRed + $devianceBlue + $devianceGreen;
+        @if ($devianceTotal < $bestDeviance) {
+          $bestColor: $newColor !global;
+          $bestDeviance: $devianceTotal !global;
+          $bestTransformation: 's' + $desaturation + 'd' + $darken + 't' + $tint !global;
+        }
+      }
+      @for $k from 1 through 20 {
+        $shade: $k * 5;
+        $newColor: shade(darken(desaturate($color, $desaturation * 1%), $darken * 1%), $shade * 1%);
+
+        $devianceRed: abs(red($targetColor) - red($newColor));
+        $devianceBlue: abs(blue($targetColor) - blue($newColor));
+        $devianceGreen: abs(green($targetColor) - green($newColor));
+        $devianceTotal: $devianceRed + $devianceBlue + $devianceGreen;
+        @if ($devianceTotal < $bestDeviance) {
+          $bestColor: $newColor !global;
+          $bestDeviance: $devianceTotal !global;
+          $bestTransformation: 's' + $desaturation + 'd' + $darken + 's' + $shade !global;
+        }
+      }
+    }
+  }
+
+  background-color: $bestColor;
+  @debug $bestTransformation;
+}

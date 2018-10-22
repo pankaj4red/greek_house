@@ -1,0 +1,441 @@
+/** VARIABLES **/
+$padding-block-lr: 16px;
+$padding-big-block-lr: 20px;
+@mixin campaign-badge {
+  @include font-family-avenir;
+  @include font-size(14px);
+  @include font-spacing(0.05rem);
+  @include font-semi-bold;
+  padding: 8px 20px;
+  background: $color-title-blue;
+  border-radius: 4px;
+  color: #fff;
+}
+
+@mixin progress-bar {
+  position: relative;
+  border-radius: 4px;
+
+  .progress__success {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: $color-title-blue;
+  }
+}
+
+@mixin campaign-btn-buy {
+  width: 100%;
+  @include font-size(14px);
+  padding: 13px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  i {
+    @include font-size(16px);
+    margin-right: 6px;
+  }
+}
+
+.page {
+  padding: 50px 0 50px;
+  @include media-breakpoint-down(md) { padding-top: 20px; }
+}
+
+.block-info-rounded {
+  @include font-family-avenir;
+  border: 1px solid $color-border-light-grey;
+  border-radius: 4px;
+  margin-bottom: 15px;
+
+  .block-info__title {
+    @include avenir-blue-title;
+    position: relative;
+    padding: 16px $padding-block-lr;
+    border-bottom: 2px solid $color-border-light-grey;
+
+    .title__button {
+      position: absolute;
+      top: 50%;
+      margin-top: -11px;
+      right: $padding-block-lr;
+      color: #979797;
+      line-height: normal;
+      transition: all 0.3s;
+      @include font-size(20px);
+
+      &:hover {
+        color: #555;
+        text-decoration: none;
+      }
+
+      &.block-toggle {
+        margin-top: -18px;
+
+
+        &:hover {
+          &:after { color: #979797; }
+        }
+
+        &:after {
+          content: '\f106';
+          @include font-size(30px);
+          font-family: 'FontAwesome';
+          color: #c9cdd0;
+          transition: all 0.3s;
+        }
+
+        &.closed:after {
+          content: '\f107';
+        }
+
+      }
+    }
+  }
+
+  .block-info__body {
+
+    padding-top: 10px;
+    padding-bottom: 0;
+
+    .body__item {
+
+      padding: 10px $padding-block-lr;
+
+      &:last-child {  margin-bottom: 0;  }
+      &.grey { background: $color-bg-light-grey; }
+
+      .item__title {
+        @include font-light;
+        @include font-upper;
+        @include font-spacing(0.1rem);
+        @include font-size(14px);
+        color: $color-info-title-grey;
+      }
+
+      .item__value {
+        @include font-spacing(0.05rem);
+        @include font-size(12px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-info-value-grey;
+
+        + .item__value { margin-top: 10px;}
+      }
+    }
+  }
+
+  &.campaign-header {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(md) { flex-wrap: wrap; }
+    @include media-breakpoint-down(xs) { padding: 10px 10px; }
+
+    .campaign-header__badge {
+      @include campaign-badge;
+      margin-right: 28px;
+      margin-bottom: 0px;
+    }
+
+    .campaign-header__name {
+      @include avenir-blue-title;
+      flex-grow: 1;
+      //margin: 0 28px;
+      margin-right: 28px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        order: 2;
+      }
+    }
+
+    .campaign-header__status {
+      @include font-size(16px);
+      @include font-upper;
+      font-weight: 300;
+      color: #838282;
+      span { font-weight: 400;}
+    }
+  }
+
+  &.big-paddings {
+    .block-info__title, .block-info__body {
+      padding-left: $padding-big-block-lr;
+      padding-right: $padding-big-block-lr;
+
+      @include media-breakpoint-down(xs) {
+        padding-left: $padding-block-lr;
+        padding-right: $padding-block-lr;
+      }
+
+    }
+  }
+
+}
+
+.toggle-checkbox {
+
+  position: absolute;
+  left: -9999px;
+
+  + label {
+    display: block;
+    margin: 0;
+    position: relative;
+    background: #e1e8ee;
+    border: 1px solid #ced5da;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 40px;
+    height: 10px;
+
+    span {
+      position: absolute;
+      top: -5px;
+      left: 5px;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: #b6bfc7;
+      transition: all .3s ease;
+    }
+
+  }
+
+
+  &:checked {
+
+    + label span {
+      background: #3e99d1;
+      left: auto;
+      right: 5px;
+    }
+  }
+
+}
+
+/** OVERRIDE **/
+
+/** BOOTSTRAP TABS **/
+.nav-tabs {
+  flex-wrap: nowrap;
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+
+  .nav-item {
+    position: relative;
+    flex: 1; //to make all children of equal width
+    text-align: center;
+    margin-bottom: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      top: 10px;
+      bottom: 10px;
+      right: 0;
+      background: #b3b3b3;
+
+    }
+
+    &:last-child {
+      &:after {  display: none;  }
+    }
+
+    .nav-link {
+      @include avenir-blue-title;
+      @include font-spacing(0.2rem);
+      position: relative;
+      border: none;
+      padding: 1.2rem 0;
+
+      @include media-breakpoint-down(xs) { font-size: 0 }
+
+      &.active {
+        //color: $color-title-blue;
+
+        &:before, &:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-color: transparent;
+          border-bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        &:before {
+          bottom: -13px;
+          border-top-color: #777;
+          border-right-width: 16px;
+          border-left-width: 16px;
+          border-top-width: 13px;
+        }
+
+        &:after {
+          bottom: -12px;
+          border-top-color: #fff;
+          border-right-width: 15px;
+          border-left-width: 15px;
+          border-top-width: 12px;
+        }
+      }
+
+      .mobile-only {
+        @include font-size(22px);
+        color: $color-title-blue;
+
+        @include media-breakpoint-down(xs) { display: block; }
+
+        &.tshirt-icon {
+          width: 22px;
+          height: 22px;
+          margin: 0 auto;
+          background: url(/images/test/icons/icon-tshirt.svg) 0 0 no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.tab-content {
+  padding: 30px 0 0;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* UI DATEPICKER */
+
+.greekhouse-datepicker {
+
+  &.ui-widget.ui-widget-content {
+    border: 0;
+    width: 300px;
+  }
+
+  &.ui-datepicker {
+
+    @include font-family-avenir;
+    padding: 0;
+    border-radius: 0;
+
+    .ui-datepicker-header {
+      background: #f0f0f0;
+      border: 0;
+      border-radius: 0;
+      margin: 0; padding: 0;
+      height: 50px;
+
+
+      .ui-datepicker-title {
+        @include font-size(14px);
+        font-weight: 600;
+        line-height: 50px;
+      }
+
+      .ui-datepicker-prev, .ui-datepicker-next {
+
+        top: 0;
+        width: auto; height: auto;
+        cursor: pointer;
+
+        span { display: none; }
+
+        &:hover {
+          border: 0;
+          background: inherit;
+
+        }
+
+        &:after {
+          font-family: 'FontAwesome';
+          @include font-size(20px);
+          color: $color-title-blue;
+          line-height: 50px;
+        }
+      }
+
+      .ui-datepicker-prev { left: 20px; &:after {content: '\f104';} }
+      .ui-datepicker-next { right: 20px; &:after {content: '\f105';} }
+    }
+
+    table.ui-datepicker-calendar {
+      margin: 0;
+      border: 1px solid #ecedee;
+
+      th {
+        padding: 12px 10px;
+        background: #f9f9f9;
+        color: #bebfc1;
+        @include font-size(12px);
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      td {
+        padding: 0;
+        border: 1px solid #ecedee;
+
+        a.ui-state-default {
+          padding: 12px 10px;
+          text-align: center;
+          color: #2f3542;
+          @include font-size(14px);
+          background: #fff;
+          font-weight: 600;
+          line-height: 1;
+          border: 0;
+
+          &.ui-state-active {
+            background: $color-title-blue;
+            color: #fff;
+          }
+
+
+        }
+      }
+
+    }
+  }
+}
+
+.tooltip {
+  .tooltip-inner {
+    @include font-size(12px);
+    background: $color-title-blue;
+    padding: 10px 20px;
+    max-width: 300px;
+  }
+
+
+  &.bs-tooltip-right {
+    .arrow::before {
+      border-right-color: $color-title-blue;
+    }
+  }
+
+  &.bs-tooltip-top {
+    .arrow::before {
+      border-top-color: $color-title-blue;
+    }
+  }
+}
+
+.fa-question-circle-o {
+  @include font-size(14px);
+  color: $color-title-blue;
+}
+

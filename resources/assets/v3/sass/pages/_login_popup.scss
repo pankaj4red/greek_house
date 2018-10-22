@@ -1,0 +1,80 @@
+#gh-modal .modal-dialog { max-width: 400px;}
+.login-register-content .close {
+  background-image: url("/images/CrossButton_Grey.png");
+  background-repeat: no-repeat;
+  height: 45px;
+  right: 20px;
+  top: 18px;
+  width: 45px;
+}
+
+.order-detail-page .close {
+  top: 9px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-image: url("/images/Cross-Icon-White.png");
+  background-repeat: no-repeat;
+}
+
+.login-register-content {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.login-register-content .fa {
+  color: #c2c2c2;
+  font-size: 36px;
+  padding-top: 10px;
+}
+
+.login-register-content label {
+  display: none;
+}
+
+.login-register-content h1 {
+  font-family: Rockwell;
+  color: #219cdc;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.login-register-content  input {
+  box-shadow: none;
+  display: inline-block;
+  border: 1px solid #dedede;
+  border-radius: 7px;
+  color: #5e6977;
+  height: 40px;
+  font-family: Avenir Next W1G;
+  background: #fff;
+  font-weight: 300;
+}
+.login-register-content .btn-blue-greek-house{
+  padding: 5px 60px;
+  font-weight: normal;
+  background-color: #219cdc;
+  border-color: #219cdc;
+  text-transform: uppercase;
+  font-family: Avenir Next W1G;
+  color: #FFF;
+  border-radius: 7px;
+  font-size: 16px;
+}
+.login-register-content .btn-blue-greek-house:hover{
+  background-color: #FFF;
+  color: #219cdc;
+  border-color: #219cdc;
+}
+.login-register-content  h1 {
+  color: #219cdc;
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: Rockwell;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+}

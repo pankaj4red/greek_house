@@ -1,0 +1,80 @@
+.store {
+
+  padding-bottom: 100px;
+
+  /* TOP INTRO BLOCK */
+  .intro {
+    @include background-cover(center, top);
+    background-color: #fff;
+    background-image: url(/images/campus-manager/reward_bg.jpg);
+    padding: 120px 0;
+    text-align: center;
+
+    .gh-subtitle {
+      max-width: 700px;
+      margin: 10px auto 0;
+    }
+
+  }
+
+  /* BLOCK GET FEATURED */
+  .get-featured {
+    padding: 40px 0 80px;
+    text-align: center;
+
+    .featured__imgs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 976px;
+      margin: 30px auto 0;
+    }
+
+    .featured__img {
+      width: 244px; height: 244px;
+      @include background-cover(center, center);
+      background-position: center center;
+    }
+  }
+
+  /* BLOCK GET INVOLVED */
+  .get-involved {
+    text-align: center;
+    padding: 76px 0 30px;
+
+    .involved__items {
+
+      margin-top: 46px;
+
+      .involved__item {
+        @include font-size(18px);
+        display: block;
+        text-align: center;
+        color: $color-title-grey;
+        font-weight: 300;
+        margin-bottom: 40px;
+        text-decoration: none;
+
+        .involved__img {
+          @include background-cover(center, top);
+          width: 100%; height: 260px;
+          margin-bottom: 30px;
+          transition: all 0.3s;
+        }
+
+        .gh-title {  margin-bottom: 10px;  }
+
+        .involved__text { padding: 0 20px; }
+
+        &:hover {
+          .involved__img {
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+          }
+        }
+
+      }
+    }
+  }
+
+  .grey-bg {  background: $color-bg-light-grey2;  }
+}

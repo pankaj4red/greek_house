@@ -1,0 +1,170 @@
+
+@font-face {
+  font-family: 'Rockwell';
+  src: url('/fonts/Rockwell.eot');
+  src: url('/fonts/Rockwell.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Rockwell.woff2') format('woff2'),
+  url('/fonts/Rockwell.woff') format('woff'),
+  url('/fonts/Rockwell.ttf') format('truetype'),
+  url('/fonts/Rockwell.svg#Rockwell') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: url('/fonts/AvenirNextW1G-Thin.eot');
+  src: url('/fonts/AvenirNextW1G-Thin.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/AvenirNextW1G-Thin.woff2') format('woff2'),
+  url('/fonts/AvenirNextW1G-Thin.woff') format('woff'),
+  url('/fonts/AvenirNextW1G-Thin.ttf') format('truetype'),
+  url('/fonts/AvenirNextW1G-Thin.svg#AvenirNextW1G-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G Ultra';
+  src: url('/fonts/AvenirNextW1G-UltraLight.eot');
+  src: url('/fonts/AvenirNextW1G-UltraLight.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/AvenirNextW1G-UltraLight.woff2') format('woff2'),
+  url('/fonts/AvenirNextW1G-UltraLight.woff') format('woff'),
+  url('/fonts/AvenirNextW1G-UltraLight.ttf') format('truetype'),
+  url('/fonts/AvenirNextW1G-UltraLight.svg#AvenirNextW1G-UltraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: url('/fonts/AvenirNextW1G-Light.eot');
+  src: url('/fonts/AvenirNextW1G-Light.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/AvenirNextW1G-Light.woff2') format('woff2'),
+  url('/fonts/AvenirNextW1G-Light.woff') format('woff'),
+  url('/fonts/AvenirNextW1G-Light.ttf') format('truetype'),
+  url('/fonts/AvenirNextW1G-Light.svg#AvenirNextW1G-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: url('/fonts/AvenirNextW1G-Regular.eot');
+  src: url('/fonts/AvenirNextW1G-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/AvenirNextW1G-Regular.woff2') format('woff2'),
+  url('/fonts/AvenirNextW1G-Regular.woff') format('woff'),
+  url('/fonts/AvenirNextW1G-Regular.ttf') format('truetype'),
+  url('/fonts/AvenirNextW1G-Regular.svg#AvenirNextW1G-Regular') format('svg');
+  font-weight: normal; //400
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: url('/fonts/AvenirNextW1G-Medium.eot');
+  src: url('/fonts/AvenirNextW1G-Medium.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/AvenirNextW1G-Medium.woff2') format('woff2'),
+  url('/fonts/AvenirNextW1G-Medium.woff') format('woff'),
+  url('/fonts/AvenirNextW1G-Medium.ttf') format('truetype'),
+  url('/fonts/AvenirNextW1G-Medium.svg#AvenirNextW1G-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: url('/fonts/AvenirNextW1G-Demi.eot');
+  src: url('/fonts/AvenirNextW1G-Demi.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/AvenirNextW1G-Demi.woff2') format('woff2'),
+  url('/fonts/AvenirNextW1G-Demi.woff') format('woff'),
+  url('/fonts/AvenirNextW1G-Demi.ttf') format('truetype'),
+  url('/fonts/AvenirNextW1G-Demi.svg#AvenirNextW1G-Demi') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: url('/fonts/AvenirNextW1G-Bold.eot');
+  src: url('/fonts/AvenirNextW1G-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/AvenirNextW1G-Bold.woff2') format('woff2'),
+  url('/fonts/AvenirNextW1G-Bold.woff') format('woff'),
+  url('/fonts/AvenirNextW1G-Bold.ttf') format('truetype'),
+  url('/fonts/AvenirNextW1G-Bold.svg#AvenirNextW1G-Bold') format('svg');
+  font-weight: bold; //700
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next W1G';
+  src: url('/fonts/AvenirNextW1G-Heavy.eot');
+  src: url('/fonts/AvenirNextW1G-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/AvenirNextW1G-Heavy.woff2') format('woff2'),
+  url('/fonts/AvenirNextW1G-Heavy.woff') format('woff'),
+  url('/fonts/AvenirNextW1G-Heavy.ttf') format('truetype'),
+  url('/fonts/AvenirNextW1G-Heavy.svg#AvenirNextW1G-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/** deprecated */
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Light.eot');
+  src: url('/fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Gotham-Light.woff2') format('woff2'),
+  url('/fonts/Gotham-Light.woff') format('woff'),
+  url('/fonts/Gotham-Light.ttf') format('truetype'),
+  url('/fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Ultra';
+  src: url('/fonts/Gotham-Ultra.eot');
+  src: url('/fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Gotham-Ultra.woff2') format('woff2'),
+  url('/fonts/Gotham-Ultra.woff') format('woff'),
+  url('/fonts/Gotham-Ultra.ttf') format('truetype'),
+  url('/fonts/Gotham-Ultra.svg#Gotham-Ultra') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Black.eot');
+  src: url('/fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Gotham-Black.woff2') format('woff2'),
+  url('/fonts/Gotham-Black.woff') format('woff'),
+  url('/fonts/Gotham-Black.ttf') format('truetype'),
+  url('/fonts/Gotham-Black.svg#Gotham-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('/fonts/Gotham-Book.eot');
+  src: url('/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Gotham-Book.woff2') format('woff2'),
+  url('/fonts/Gotham-Book.woff') format('woff'),
+  url('/fonts/Gotham-Book.ttf') format('truetype'),
+  url('/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Bold.eot');
+  src: url('/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Gotham-Bold.woff2') format('woff2'),
+  url('/fonts/Gotham-Bold.woff') format('woff'),
+  url('/fonts/Gotham-Bold.ttf') format('truetype'),
+  url('/fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -1,0 +1,21 @@
+//font size - rem. @include font-size(14px)
+@function calculateRem($size) {
+  $remSize: $size / $font-size-base;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin background-cover($x, $y) {
+  background-position: $x $y;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin make-hoverable {
+  cursor: pointer;
+  transition: all 0.3s;
+}

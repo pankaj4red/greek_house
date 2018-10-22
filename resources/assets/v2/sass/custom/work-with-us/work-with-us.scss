@@ -1,0 +1,340 @@
+
+#work-with-us-form {
+  background: transparent url(/images/ambassador/reward_bg.jpg) repeat top;
+  background-size: cover;
+  padding: 120px 0;
+
+  h1 {
+    @include rockwell-extra-large-header;
+  }
+
+  p {
+    @include avenir-regular-large;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 40px;
+  }
+
+  input[type=text] {
+    border: 1px solid #4d4d4d;
+    padding: 13px;
+    background-color: transparent;
+    height: 48px;
+    font-weight: 500;
+  }
+
+  input[type=text].is-invalid, select.is-invalid {
+    border-color: #dc3545;
+  }
+
+  .invalid-feedback {
+    text-align: left;
+  }
+
+  select {
+    border: 1px solid #4d4d4d;
+    background-color: transparent;
+    height: 48px;
+
+    option {
+      font-weight: 500;
+
+      &:first-child {
+        color: #868e96;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 48px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
+}
+
+#work-with-us-benefits {
+  .work-with-us-benefits-section {
+    margin-bottom: 50px;
+
+    h2 {
+      @include rockwell-large-header;
+      text-align: center;
+    }
+
+    hr {
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      @include rockwell-xs-header;
+      text-align: center;
+    }
+
+    p {
+      @include avenir-regular-space;
+    }
+
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+#work-with-us-platform {
+  background-color: #f9fafb;
+  text-align: left;
+
+  h2 {
+    @include rockwell-large-header;
+  }
+
+  hr {
+    width: 50%;
+    float: left;
+  }
+
+  p {
+    clear: both;
+    @include avenir-regular-large;
+  }
+
+  ul {
+    padding: 0;
+    border: 0;
+
+    li {
+      list-style: none;
+      @include avenir-regular-large;
+      @include font-upper;
+      width: 100%;
+      float: left;
+      margin-top: 20px;
+      padding: 0 0 7px 70px;
+      background: url(/images/check_ico.png) no-repeat top left;
+      line-height: 3rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+#work-with-us-community {
+  h2 {
+    @include rockwell-large-header;
+    text-align: center;
+  }
+
+  h3 {
+    @include avenir-caption;
+    text-align: center;
+  }
+
+  p {
+    @include avenir-regular;
+    margin-bottom: 1rem;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  p.smaller {
+    @include avenir-small;
+    margin-bottom: 0;
+  }
+
+  small {
+    @include avenir-small;
+  }
+
+  img {
+    margin-bottom: 2rem;
+    width: 126px;
+    display: inline-block;
+    height: 126px;
+    border-radius: 100%;
+    border: 6px solid #e9ecf2;
+  }
+
+  .work-with-us-community {
+    border-top: 1px solid #70aed8;
+    padding-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    right: 8%;
+    height: 90px;
+
+    p {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .col-lg-4 {
+    padding-bottom: 90px;
+  }
+}
+
+#work-with-us-faq {
+  background-color: #f9fafb;
+
+  h2 {
+    @include rockwell-large-header;
+    text-align: center;
+  }
+
+  hr {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .work-with-us-faq-section {
+    margin-bottom: 50px;
+
+    h3 {
+      @include rockwell-standard-header;
+    }
+
+    p {
+      @include avenir-regular-large;
+    }
+  }
+
+  a {
+    @include button-large;
+    @include font-upper;
+  }
+}
+
+.ua-mobile-iphone.ua-safari #work-with-us-form select {
+  text-indent: 14px !important;
+  padding-left: 0 !important;
+  -webkit-appearance: none !important;
+}
+
+#modal_set_password input.form-control, .model-signup .form-control {
+   height: 40px;
+   /* border-radius: 7px; */
+   color: #5e6977;
+   font-family: Avenir Next W1G;
+   font-weight: 300;
+ }
+#modal_set_password .signup-info {
+  font-family: Avenir Next W1G;
+  font-weight: 300;
+  color: #5e6977;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+#modal_set_password .small-info{ font-size: 12px;}
+#modal_set_password h1{
+  font-size: 1.8em;
+  color: #219cdc;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-family: Rockwell, 'Roboto', sans-serif;
+  margin-top: 10px;
+
+}
+button#account_password_button, button.signup-popup-button, .btn-success {
+  padding: 5px 60px;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: #219cdc;
+  border-color: #219cdc;
+  text-transform: uppercase;
+  font-family: Avenir Next W1G;
+}
+button#create_account_button:hover{
+  background-color: #FFF;
+  color: #219cdc;
+  border: 1px solid #219cdc;
+}
+#modal_set_password .set-password-title{
+  color: #219cdc;
+  width: 65px;
+  margin: auto;
+}
+
+.centered{ margin: auto;}
+#thankyou-form{
+
+.form-control{
+  height: 40px !important;
+}
+
+}
+.thanks-page{
+  text-align: left;
+  margin-bottom: 85px;
+  .heading{
+    color: #5e5e5e;
+    text-align: center;
+  }
+  .blue-heading{
+    color:#3494d3;
+    margin-bottom: 20px;
+  }
+.numbered-container{  position: relative;
+  width: 175px;
+  margin-left: auto;
+  margin-right: auto;}
+  .fixed-size-image{
+    width: 100%;
+    border-radius: 100%;
+  }
+  a, a:hover{ text-decoration: none}
+  .list-caption {
+    display: block;
+    text-align: center;
+    @include avenir-regular-large;
+
+  }
+  .gray{
+    color: #77787b !important;
+    font-size: 1rem !important;
+    margin-top: 10px;
+    @include avenir-regular-medium;
+  }
+  .btn-success, .btn-success:hover .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle{
+    background:#3494d3;
+    border-color: #3494d3;
+    font-family: Avenir Next W1G;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .info-text{
+    color: #828282;
+    font-family: "Avenir Next W1G Medium";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+   }
+.panel{
+  margin-top: 20px;
+}
+}
+@media (min-width: 576px) {
+   #modal_set_password .modal-dialog{
+    width: 530px;
+  }
+}
+@media(max-width: 576px)  {
+  #modal_set_password{ padding: 0px;}
+  ul.numbered-image-list li{ width: 100%}
+  .thanks-page .heading{ font-size: 21px;}
+  .thanks-page .info-text{ line-height: 27px;}
+
+}
+
+

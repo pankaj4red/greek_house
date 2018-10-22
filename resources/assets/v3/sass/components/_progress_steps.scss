@@ -1,0 +1,66 @@
+.progress-steps ul {
+  width: 100%;
+  border-bottom: 0;
+  margin-bottom: 1.5rem;
+  display: table;
+  table-layout: fixed;
+
+  li {
+    display: table-cell;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-bottom: 3px solid $gray-200;
+
+    &:active, &:hover, &:active, &.active {
+      border-bottom: 3px solid $ui-primary;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+
+    a, & > span {
+      color: $gray-600;
+      font-size: $font-size-sm;
+      font-family: $font-avenir-w1g;
+      font-weight: 500;
+
+      &:hover, &:active, &:focus {
+        text-decoration: none;
+      }
+
+      & > span {
+        position: relative;
+        top: -2px;
+        display: inline-block;
+        min-width: 10px;
+        padding: 3px 5px;
+        margin-right: 2px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1;
+        color: $white;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        background-color: $gray-600;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .progress-steps ul li {
+    display: none;
+    text-align: left;
+
+    &.active {
+      display: block;
+    }
+  }
+}

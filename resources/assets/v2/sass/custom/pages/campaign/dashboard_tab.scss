@@ -1,0 +1,63 @@
+.campaign-view-tab-list {
+  margin-bottom: 40px;
+
+  .campaign-view-tab {
+    display: inline-block;
+    margin-right: 20px;
+
+    a {
+      font-family: "Avenir Next W1G", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 1.23076923rem;
+      font-weight: 500;
+      color: #279bd4;
+      letter-spacing: 0.2rem;
+      position: relative;
+      border: none;
+      padding-bottom: 4px;
+      //padding: 1.2rem 0;
+
+      &:hover {
+        font-weight: 600;
+      }
+
+      &:after {
+        content: attr(title);
+        display:block;
+        font-weight: 600;
+        height:1px;
+        color:transparent;
+        overflow:hidden;
+        visibility:hidden;
+      }
+
+
+      text-decoration: none;
+    }
+
+    &.active {
+
+      a {
+        font-weight: 600;
+        border-bottom: 2px solid;
+      }
+
+      /*a {
+        text-decoration: underline;
+
+        &:after {
+          content:'';
+          position: absolute;
+          top: 75%;
+          left: 50%;
+            margin-left: -2px;
+          width: 0;
+          height: 0;
+          border-top: solid 5px #279bd4;
+          border-left: solid 5px transparent;
+          border-right: solid 5px transparent;
+        }
+      }*/
+    }
+  }
+}

@@ -1,0 +1,223 @@
+
+#ambassador-program {
+  background: transparent url(/images/ambassador/reward_bg.jpg) repeat top;
+  background-size: cover;
+  padding: 120px 0;
+
+  h1 {
+    @include rockwell-extra-large-header;
+  }
+
+  p {
+    @include avenir-regular-large;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 40px;
+  }
+
+  a {
+    @include opacity-7;
+    @include button-large;
+  }
+}
+
+#ambassador-join-team {
+  background: transparent url(/images/ambassador/chapter.jpg) repeat top;
+  background-size: cover;
+
+  img {
+    max-width: 100%;
+
+    @include media-breakpoint-down(sm) {
+      max-height: 400px;
+    }
+  }
+
+  h2 {
+    @include rockwell-extra-large-header-reversed;
+    @include font-double-margin;
+    text-align: left;
+    font-size: 3.8rem;
+    font-weight: bold;
+  }
+
+  p {
+    @include avenir-regular-large-reversed;
+    @include font-double-margin;
+    text-align: left;
+    margin-right: 12%;
+  }
+
+  a {
+    @include button-large;
+    float: left;
+  }
+}
+
+#ambassador-why {
+  .ambassador-why-section {
+    margin-bottom: 50px;
+
+    h2 {
+      @include rockwell-large-header;
+      text-align: center;
+    }
+
+    hr {
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      @include rockwell-xs-header;
+      text-align: center;
+    }
+
+    p {
+      @include avenir-regular-space;
+    }
+
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+#ambassador-meet {
+  h2 {
+    @include rockwell-standard-header;
+    text-align: center;
+  }
+
+  hr {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    @include avenir-caption;
+    text-align: center;
+  }
+
+  p {
+    @include avenir-regular;
+    margin-bottom: 1rem;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  p.smaller {
+    @include avenir-small;
+    margin-bottom: 0;
+  }
+
+  small {
+    @include avenir-small;
+  }
+
+  img {
+    margin-bottom: 2rem;
+    width: 126px;
+    display: inline-block;
+    height: 126px;
+    border-radius: 100%;
+    border: 6px solid #e9ecf2;
+  }
+
+  .ambassador-meet-footer {
+    border-top: 1px solid #70aed8;
+    padding-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    right: 8%;
+    height: 90px;
+
+    p {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .col-lg-4 {
+    padding-bottom: 90px;
+  }
+}
+
+#ambassador-work {
+  background: transparent url(/images/ambassador/work.jpg) repeat top;
+  background-size: cover;
+
+  h2 {
+    @include rockwell-standard-header;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #bbb9ba;
+    background-color: #fff;
+    width: auto;
+    display: inline-block;
+    -webkit-box-shadow: 0 4px 5px 1px rgba(187, 185, 186, 0.62);
+    -moz-box-shadow: 0 4px 5px 1px rgba(187, 185, 186, 0.62);
+    box-shadow: 0 4px 5px 1px rgba(187, 185, 186, 0.62);
+    z-index: 1;
+    position: relative;
+  }
+
+  .ambassador-work-section > .row {
+    margin-top: -70px;
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+#ambassador-form {
+  background: transparent url(/images/ambassador/reward_bg.jpg) repeat top;
+  background-size: cover;
+
+  h2 {
+    @include rockwell-standard-header;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    @include button;
+    @include button-large;
+  }
+
+  input[type=text] {
+    border: 1px solid #4d4d4d;
+    padding: 13px;
+    background-color: transparent;
+    height: 48px;
+    font-weight: 500;
+  }
+
+  input[type=text].is-invalid, select.is-invalid {
+    border-color: #dc3545;
+  }
+
+  .invalid-feedback {
+    text-align: left;
+  }
+
+  select {
+    border: 1px solid #4d4d4d;
+    background-color: transparent;
+    height: 48px;
+
+    option {
+      font-weight: 500;
+
+      &:first-child {
+        color: #868e96;
+      }
+    }
+  }
+}

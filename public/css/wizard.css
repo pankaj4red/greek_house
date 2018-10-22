@@ -1,0 +1,2985 @@
+/*GLOBAL STYLES*/
+
+/*font-face section*/
+
+@font-face {
+    font-family: Rockwell;
+    src: url("../fonts/RockwellStd.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Avenir Next W1G';
+    src: url(../fonts/AvenirNextW1G-Medium.eot);
+    src: url(../fonts/AvenirNextW1G-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/AvenirNextW1G-Medium.woff2) format('woff2'),
+    url(../fonts/AvenirNextW1G-Medium.woff) format('woff'),
+    url(../fonts/AvenirNextW1G-Medium.ttf) format('truetype'),
+    url(../fonts/AvenirNextW1G-Medium.svg#AvenirNextW1G-Medium) format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next W1G';
+    src: url(../fonts/AvenirNextW1G-Heavy.eot);
+    src: url(../fonts/AvenirNextW1G-Heavy.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/AvenirNextW1G-Heavy.woff2) format('woff2'),
+    url(../fonts/AvenirNextW1G-Heavy.woff) format('woff'),
+    url(../fonts/AvenirNextW1G-Heavy.ttf) format('truetype'),
+    url(../fonts/AvenirNextW1G-Heavy.svg#AvenirNextW1G-Heavy) format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next W1G';
+    src: url(../fonts/AvenirNextW1G-Thin.eot);
+    src: url(../fonts/AvenirNextW1G-Thin.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/AvenirNextW1G-Thin.woff2) format('woff2'),
+    url(../fonts/AvenirNextW1G-Thin.woff) format('woff'),
+    url(../fonts/AvenirNextW1G-Thin.ttf) format('truetype'),
+    url(../fonts/AvenirNextW1G-Thin.svg#AvenirNextW1G-Thin) format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next W1G Ultra';
+    src: url(../fonts/AvenirNextW1G-UltraLight.eot);
+    src: url(../fonts/AvenirNextW1G-UltraLight.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/AvenirNextW1G-UltraLight.woff2) format('woff2'),
+    url(../fonts/AvenirNextW1G-UltraLight.woff) format('woff'),
+    url(../fonts/AvenirNextW1G-UltraLight.ttf) format('truetype'),
+    url(../fonts/AvenirNextW1G-UltraLight.svg#AvenirNextW1G-UltraLight) format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next W1G';
+    src: url(../fonts/AvenirNextW1G-Light.eot);
+    src: url(../fonts/AvenirNextW1G-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/AvenirNextW1G-Light.woff2) format('woff2'),
+    url(../fonts/AvenirNextW1G-Light.woff) format('woff'),
+    url(../fonts/AvenirNextW1G-Light.ttf) format('truetype'),
+    url(../fonts/AvenirNextW1G-Light.svg#AvenirNextW1G-Light) format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next W1G';
+    src: url(../fonts/AvenirNextW1G-Regular.eot);
+    src: url(../fonts/AvenirNextW1G-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/AvenirNextW1G-Regular.woff2) format('woff2'),
+    url(../fonts/AvenirNextW1G-Regular.woff) format('woff'),
+    url(../fonts/AvenirNextW1G-Regular.ttf) format('truetype'),
+    url(../fonts/AvenirNextW1G-Regular.svg#AvenirNextW1G-Regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next W1G';
+    src: url(../fonts/AvenirNextW1G-Bold.eot);
+    src: url(../fonts/AvenirNextW1G-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/AvenirNextW1G-Bold.woff2) format('woff2'),
+    url(../fonts/AvenirNextW1G-Bold.woff) format('woff'),
+    url(../fonts/AvenirNextW1G-Bold.ttf) format('truetype'),
+    url(../fonts/AvenirNextW1G-Bold.svg#AvenirNextW1G-Bold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next W1G';
+    src: url(../fonts/AvenirNextW1G-Demi.eot);
+    src: url(../fonts/AvenirNextW1G-Demi.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/AvenirNextW1G-Demi.woff2) format('woff2'),
+    url(../fonts/AvenirNextW1G-Demi.woff) format('woff'),
+    url(../fonts/AvenirNextW1G-Demi.ttf) format('truetype'),
+    url(../fonts/AvenirNextW1G-Demi.svg#AvenirNextW1G-Demi) format('svg');
+}
+
+/* end font-face section*/
+
+/*DESIGN GALLERY SECTION*/
+
+.light-gray-background-full-width {
+
+    background-color: #f7f7f7;
+}
+
+.design-gallery-box {
+    background-color: #FFF;
+    display: inline;
+    text-align: center;
+}
+
+h2.design-gallery-heading {
+
+    padding-top: 15px;
+    color: #2d92d5;
+    font-family: Rockwell, 'Roboto', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3.4px;
+}
+
+h5.design-gallery-subheading {
+
+    color: #2a2e42;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.blue-line-centered {
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-bottom: 3px solid #2d92d5;
+}
+
+.select2-container--default .select2-selection--multiple {
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+/*END OF DESIGN GALLERY SECTION*/
+
+/*ADVANCE SEARCH SECTION*/
+
+.gray-background-full-width {
+
+    background-color: #eaeaea;
+}
+
+.advance-search-box {
+    background-color: #eaeaea;
+}
+
+h3.advance-search-heading {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: #2a2e42;
+    font-family: Rockwell, 'Roboto', sans-serif;
+    letter-spacing: 2.4px;
+    font-size: 15px;
+
+}
+
+/*button styling for Advance search section*/
+
+.btn-wrapper {
+    width: 100%;
+    /*text-align: center;*/
+}
+
+img.btn-arrow-down {
+    position: relative;
+    right: -100px;
+}
+
+img.btn-arrow-down-up {
+    position: relative;
+    right: -110px;
+    top: -10px;
+}
+
+/*end button styling for Advance search section*/
+
+/* END OF ADVANCE SEARCH SECTION*/
+
+/*TRENDING SECTION STYLES*/
+
+.centered-box {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.button-wrapper-blue {
+    display: inline;
+    background-color: #3596d6;
+    padding: 13px 5px 17px 0px;
+    border-radius: 7px;
+}
+
+.btn-dimensions {
+    padding: 10px 35px;
+    background-color: #3596d6;
+    border-color: #3596d6;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+}
+
+.btn-active-style {
+    border-color: #FFF;
+    background-color: #FFF;
+    color: #3596d6;
+}
+
+.btn-dimensions:hover {
+    border-color: #3596d6;
+    background-color: #FFF;
+    color: #3596d6;
+}
+
+.btn-helper-padding {
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+/*end of TRENDING SECTION STYLES*/
+
+/*Carousel styles*/
+
+img.arrow-left-carousel {
+    position: relative;
+    left: -60px;
+}
+
+img.arrow-right-carousel {
+    position: relative;
+    right: -60px;
+}
+
+a.carousel-control {
+
+    width: 1%;
+    text-shadow: none;
+    background-color: #FFF;
+    box-shadow: none;
+    background: none;
+    background-image: none !important;
+}
+
+@-moz-document url-prefix() {
+    a.left-modal-arrow,
+    a.right-modal-arrow {
+        width: 4%;
+    }
+}
+
+img.carousel-arrow-both {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-arrow-both-modal {
+    position: relative;
+    top: 60%;
+
+}
+
+.carousel-arrow-modal-left {
+    margin-left: -30px;
+}
+
+.apparel-control {
+    position: relative;
+    top: -50px;
+
+}
+
+.apparel-control-left {
+    margin-left: 50px;
+}
+
+.apparel-control-right {
+    margin-right: 50px;
+}
+
+/*Section 4x4 images*/
+
+img.designs-img {
+    width: 95%;
+    height: auto;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/*end of Section 4x4 images*/
+
+/*navigation styling*/
+
+.navbar-header button.navbar-toggle span.icon-bar {
+    background-color: blue;
+}
+
+li.navbar-link-styling a {
+
+    padding-top: 35px;
+    font-weight: 700;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 1.8px;
+    font-size: 12px;
+    color: #3a3939;
+}
+
+li.navbar-link-styling a:hover {
+    text-decoration: none;
+    background-color: white !important;
+    color: #2d92d5;
+
+}
+
+li.navbar-btn-styling a {
+
+    border-radius: 5px;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 14px;
+    font-weight: 600;
+    letter-spacing: 2.7px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 11px;
+    background-color: #65ba52;
+    color: #FFF;
+    border: 1px solid #65ba52;
+}
+
+li.navbar-btn-styling a:hover {
+
+    background-color: #FFF;
+    color: #65ba52;
+    transition: background-color 0.3s;
+}
+
+nav.navbar {
+    margin-bottom: 0px;
+}
+
+/*ul.navbar-nav li.nav-item a.nav-link {
+	padding-top: 35px;
+	font-weight: 700;
+	font-family: 'PT Sans', sans-serif;
+	letter-spacing: 1.8px;
+	font-size: 12px;
+	color: #5e5e5e;
+}
+
+ul.navbar-nav li.nav-item a.nav-link:hover {
+	opacity: 0.6;
+}
+
+ul.navbar-nav li.nav-item a.nav-link#green-btn-nav{
+	
+	margin-top: 27px;
+	padding-top: 8px;
+	font-weight: 700;
+	font-family: 'PT Sans', sans-serif;
+	letter-spacing: 1.8px;
+	font-size: 12px;
+	background-color: #65ba52;
+	color: #FFF;
+}
+
+ul.navbar-nav li.nav-item a.nav-link#green-btn-nav:hover {
+	background-color: white;
+	color: #65ba52;
+}
+
+img.navbar-logo-img {
+	width: 95%;
+}*/
+
+/* end of navigation styling*/
+
+/*Global headline with 1px line background*/
+
+.blue-line-bg {
+    background-image: url(../images/wizard/blue-line-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.designs-txt {
+    color: #2d92d5;
+    font-weight: 500;
+    font-family: Rockwell, 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+/* headlines with lines */
+
+.decorated {
+    overflow: hidden;
+    text-align: center;
+}
+
+.decorated > span {
+    position: relative;
+    display: inline-block;
+}
+
+.decorated > span:before, .decorated > span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid;
+    width: 592px; /* half of limiter */
+    margin: 0 40px;
+}
+
+.decorated > span:before {
+    right: 100%;
+}
+
+.decorated > span:after {
+    left: 100%;
+}
+
+/* end of headlines with lines */
+
+/* end of Global headline with 1px line background*/
+
+/*SCROLL DOWN FOR MORE DESIGN*/
+
+h5.scroll-down-design {
+    color: #2d92d5;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+img.centered-img-arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.margin-top-bottom {
+    margin: 20px 0;
+}
+
+/* end of SCROLL DOWN FOR MORE DESIGN*/
+
+/*MODAL STYLING*/
+
+h3.name-design-heading {
+
+    font-size: 26px;
+    font-family: Rockwell, 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #353535;
+    margin-top: 25px;
+}
+
+p.design-code {
+
+    font-size: 11px;
+    font-family: Rockwell, 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #5e5e5e;
+}
+
+img.modal-img-small {
+
+    width: 33%;
+    height: auto;
+    display: block;
+}
+
+.btn-modal-style {
+
+    background-color: #0397d6;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+p.download-modal {
+
+    font-size: 11px;
+    font-family: 'Lato', sans-serif;
+    color: #161616;
+    margin-top: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+p.download-modal a.link-modal {
+    color: #161616;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+p.download-modal a.link-modal:hover {
+    text-decoration: none;
+    color: #0397d6;
+    border-bottom: 1px solid #0397d6;
+}
+
+p.share-design-modal {
+
+    font-family: Rockwell, 'Roboto', sans-serif;
+    color: #353535;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+
+}
+
+a.social-network-link:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+img.social-network-small:hover {
+
+    opacity: 0.8;
+
+}
+
+h3.centered-heading-modal {
+    text-align: center;
+    color: #353535;
+    letter-spacing: 2.3px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+img.black-img-modal {
+    width: 90%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.left-modal-arrow {
+    margin-left: -40px;
+}
+
+.right-modal-arrow {
+    margin-right: -40px;
+}
+
+/*END OF MODAL STYLING*/
+
+/*ADVANCE BTN STyiLING*/
+
+.btn-advance-style {
+    border-color: #FFF;
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+    color: #5e6977;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px;
+
+}
+
+.dropdown-toggle::after {
+
+    color: #86939e;
+}
+
+/* end of ADVANCE BTN STyiLING*/
+
+/*Footer style*/
+
+footer {
+    margin-top: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer img.footer-img {
+    margin-bottom: 20px;
+}
+
+footer p.description-foot {
+
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #898989;
+    letter-spacing: 0.1px;
+    /*margin-right: 75px;*/
+}
+
+h6.blue-head-foot {
+
+    color: #2e92d5;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 1.3px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 18px;
+
+}
+
+li.link-bottom-foot {
+
+    font-size: 14px;
+    color: #2a2e42;
+    letter-spacing: 0.1px;
+    margin-bottom: 10px;
+
+}
+
+.space-bottom-push {
+    line-height: 2.2;
+}
+
+li.link-bottom-foot a {
+
+    font-family: 'PT Sans', sans-serif;
+    color: #898989;
+    line-height: 1.5;
+}
+
+li.link-bottom-foot a:hover {
+    color: #2e92d5;
+    text-decoration: none;
+}
+
+/* end Footer style*/
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #222222
+}
+
+.dropdown {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dropdown button {
+    border-color: #FFF;
+    border-radius: 7px;
+    margin-right: 20px;
+    color: #5e6977;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
+
+.dropdown .dropdown-menu {
+    margin-bottom: -10px;
+    font-size: 13px;
+}
+
+/* Dropdown */
+
+.btn-wrapper-advance-search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*START HERE PAGE BELLOW:*/
+
+#section4x4 {
+    margin-top: 50px;
+}
+
+img.products-img {
+    width: 70%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+p.description-product {
+    text-align: center;
+    color: #5e6977;
+    font-family: 'Avenir Next W1G';
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+a.no-decoration {
+    text-decoration: none;
+}
+
+a.no-decoration:hover {
+    text-decoration: none;
+}
+
+.product-wrapper {
+    border: 1px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    height: 226px;
+    width: auto;
+}
+
+.product-wrapper:hover {
+    /*border: 1px solid #2d92d5;
+    border-bottom: 3px solid #2d92d5;*/
+    border-radius: 7px;
+    -webkit-transition: border 2s;
+
+}
+
+.product-wrapper:hover ~ p.description-product {
+    color: #2d92d5;
+    -webkit-transition: hover 2s;
+
+}
+
+.thumb-wrapper {
+    border: 2px solid #e6e1e1;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+
+.text-wrapper {
+
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-top: 2px solid #e6e1e1;
+    height: 60px;
+}
+
+.thumb-wrapper:hover, .thumb-wrapper.active {
+    border: 2px solid #248ed3;
+    transition: border 1s;
+}
+
+.thumb-wrapper:hover .text-wrapper, .thumb-wrapper.active .text-wrapper {
+    border-top: 2px solid #248ed3;
+    transition: border-top 1s;
+}
+
+/*.THE FIVE STEPS */
+
+span.number-glyph {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 5px;
+    margin-right: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+}
+
+.step-five {
+    font-size: 11px !important;
+}
+
+/*. end of THE FIVE STEPS */
+
+/*Search bar styling*/
+
+#search-query {
+
+    font-family: 'Avenir Next W1G';
+}
+
+/*end of Search bar styling*/
+
+/*START-HERE.MODAL */
+
+#productsModalLargeTitleWrapper {
+    font-size: 16px;
+    color: gray;
+    font-family: Rockwell, 'Roboto', sans-serif;
+
+}
+
+#modalLargeProducts .product-description-small-modal {
+    margin-top: 10px;
+}
+
+#modalLargeProducts .product-desc-modal-head {
+    font-size: 14px;
+    font-family: 'Avenir Next W1G';
+    font-weight: bold;
+
+}
+
+#modalLargeProducts .product-desc-modal-p {
+    font-size: 12px;
+    font-family: 'Avenir Next W1G';
+}
+
+#modalLargeProducts .size .size-range-head {
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Avenir Next W1G';
+
+}
+
+#modalLargeProducts .size .size-range-p {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Avenir Next W1G';
+}
+
+#modalLargeProducts .pricing .pricing-range-head {
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Avenir Next W1G';
+
+}
+
+#modalLargeProducts .pricing .pricing-range-p {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Avenir Next W1G';
+
+}
+
+#modalLargeProducts .color-picker-modal-anchor {
+    background-image: url('../images/download.gif');
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#modalLargeProducts .inline-color-picker-modal {
+    width: 20px;
+    height: 20px;
+    border-radius: 7px;
+    background-size: cover;
+}
+
+#modalLargeProducts .color-no-1 {
+    background-color: #448fd3;
+}
+
+#modalLargeProducts .color-no-2 {
+    background-color: #c8ad7f;
+}
+
+#modalLargeProducts .color-no-3 {
+    background-color: #c87f7f;
+}
+
+#modalLargeProducts .color-no-4 {
+    background-color: #7fc89c;
+}
+
+#modalLargeProducts .color-no-5 {
+    background-color: #4bc1e1;
+}
+
+#modalLargeProducts .color-no-6 {
+    background-color: #cff2dc;
+}
+
+#modalLargeProducts .color-no-7 {
+    background-color: #bdd9ec;
+}
+
+#modalLargeProducts .color-no-8 {
+    background-color: #fff3d4;
+}
+
+#modalLargeProducts .color-no-9 {
+    background-color: #fbe057;
+}
+
+#modalLargeProducts .color-no-10 {
+    background-color: #b0b0b2;
+}
+
+#modalLargeProducts .color-no-11 {
+    background-color: #14464b;
+}
+
+#modalLargeProducts .color-no-12 {
+    background-color: #d90023;
+}
+
+#modalLargeProducts .color-no-13 {
+    background-color: #0662c1;
+}
+
+#modalLargeProducts .color-no-14 {
+    background-color: #7fc89c;
+}
+
+#modalLargeProducts a.color-picker-modal-anchor {
+    text-decoration: none;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+#modalLargeProducts a.color-picker-modal-anchor:hover {
+    text-decoration: none;
+}
+
+#modalLargeProducts .color-pick {
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+#modalLargeProducts .color-pick .color-pick-head {
+    display: inline;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Avenir Next W1G';
+
+}
+
+.btn-blue-greek-house {
+
+    background-color: #2d92d5;
+    color: #FFF;
+    border: 1px solid #2d92d5;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.btn-blue-greek-house:hover {
+    background-color: #FFF;
+    color: #2d92d5;
+    border: 1px solid #2d92d5;
+
+}
+
+#modalLargeProducts .modal-content {
+    border: 3px solid #1989d1;
+}
+
+/*end of START-HERE.MODAL */
+
+/*START-HERE.CAROUSEL-APPAREL*/
+
+#carousel-apparel-row {
+    display: block; /*stretches the carousel full width*/
+    margin-top: 30px;
+}
+
+#carousel-apparel-row .col-sm-2 p {
+    text-align: center;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#carousel-apparel-row .col-sm-2:hover p {
+    color: #2d92d5;
+    transition: color 0.2s ease-in-out;
+}
+
+/*All containers with background apparel images*/
+
+#carousel-apparel-row .col-sm-2 a .apparel-container-bg {
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+}
+
+#carousel-apparel-row .col-sm-2 a .apparel-container-bg:hover {
+    transition: background 0.2s ease-in-out;
+}
+
+.img-products-carousel {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+p.carousel-apparel-desc {
+    color: #337eb4;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+a.carousel-apparel-anchor:hover {
+    text-decoration: none;
+}
+
+a.carousel-apparel-anchor:hover p.carousel-apparel-desc {
+    opacity: 0.7;
+
+}
+
+a.carousel-apparel-anchor:hover img.img-products-carousel {
+    opacity: 0.7;
+    position: relative;
+    bottom: 5px;
+
+}
+
+/*end of START-HERE.CAROUSEL-APPAREL*/
+
+/*START HERE PAGE ABOVE:*/
+
+/*The "Step 4" page section: */
+
+.list-tag-products {
+    margin-top: 30px;
+}
+
+a.product-step-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eaeaea;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #5e5e5e;
+
+}
+
+a.product-step-link:hover {
+
+    border-bottom: 2px solid #2d92d5;
+    color: #000;
+
+}
+
+.list-tag-products a.active {
+
+    border-bottom: 2px solid #2d92d5;
+    color: #000;
+}
+
+h2.product-name-big {
+    letter-spacing: 0.1px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+    font-weight: 600;
+
+}
+
+img.product-avatar {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#quantPicker {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    width: 65%;
+}
+
+.choose-quant {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #5e5e5e;
+
+}
+
+h5.product-desc-head {
+
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2d92d5;
+    display: inline-block;
+}
+
+p.product-desc-p {
+    font-size: 12px;
+    /*max-width: 450px; just for above 1200px*/
+    text-align: justify;
+    color: #5e5e5e;
+    margin-bottom: 50px;
+}
+
+.product-description-small {
+    margin-top: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+/*SHIPPING INFO SECTION*/
+
+.shipping-info-section {
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    width: 100%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+
+}
+
+.shipping-info-section h4.shipping {
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #5e5e5e;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+img.double-down {
+    margin-right: 10px;
+    position: relative;
+    top: -2px;
+
+}
+
+form .shipping-input {
+
+}
+
+/* end of SHIPPING INFO SECTION*/
+
+/*end of The "Step 4" page section: */
+
+/*WIZARD NAVBAR GENRAL STYLING*/
+
+ul.nav-tabs li.tab-style-custom a {
+
+    font-family: 'Avenir Next W1G';
+    color: #777;
+    font-size: 13px;
+
+}
+
+ul.nav-tabs li.tab-style-custom span {
+    position: relative;
+    top: -2px;
+
+}
+
+/* end of WIZARD NAVBAR GENRAL STYLING*/
+
+/*Search buttons*/
+
+.margin-top-container {
+    margin-top: 30px;
+}
+
+.btn-container-gender {
+    text-align: center;
+}
+
+a.btn-search-gender {
+    border: 1px solid #cecece;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Avenir Next W1G';
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+a.btn-search-gender:hover {
+    background-color: #2d92d5;
+    border-color: white;
+    color: white;
+    transition: color, border-color 1s ease-in-out;
+}
+
+/*end of Search buttons*/
+
+/*THE TAB 2 CONTENT*/
+
+#tabTwo label.campaign-name-txt {
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#tabTwo img.tab2-img-display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+input#campaign-name {
+    font-family: 'Avenir Next W1G';
+    border-radius: 4px;
+    margin-top: 15px !important;
+}
+
+h4.print-location-head {
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p.print-locations-description {
+    color: #a0a0a0;
+    font-family: 'Avenir Next W1G';
+    font-weight: 500;
+    font-size: 14px;
+    font-style: italic;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+h4.panel-body-head {
+
+    color: #5e5e5e;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+p.panel-body-description {
+
+    color: #5e5e5e;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+input.form-control.form-number-counter {
+    color: #5e5e5e;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#tabTwo p.panel-body-upload {
+    color: #2d92d5;
+}
+
+#tabTwo a.upload_print_images p {
+    border: 1px dashed #2d92d5;
+    margin-top: 20px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+}
+
+#tabTwo .form-text-tabtwo {
+    max-width: 100%;
+}
+
+::-webkit-input-placeholder#myTextarea {
+    font-size: 8px;
+}
+
+:-moz-placeholder#myTextarea {
+    font-size: 8px;
+}
+
+::-moz-placeholder#myTextarea {
+    font-size: 8px;
+}
+
+:-ms-input-placeholder#myTextarea {
+    font-size: 8px;
+}
+
+/* FROM HERE DOWN:*/
+
+.tabTwo-custom-container {
+    margin-top: 50px;
+}
+
+label.btn span {
+    font-size: 14px;
+    position: relative;
+    top: -3px;
+    font-family: 'Lato', sans-serif;
+    color: #5e5e5e;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o {
+    color: #c8c8c8;
+    display: inline;
+}
+
+label input[type="radio"] ~ i.fa.fa-dot-circle-o {
+    display: none;
+}
+
+label input[type="radio"]:checked ~ i.fa.fa-circle-o {
+    display: none;
+}
+
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o {
+    color: #2d92d5;
+    display: inline;
+}
+
+label:hover input[type="radio"] ~ i.fa {
+    color: #2d92d5;
+}
+
+label input[type="checkbox"] ~ i.fa.fa-square-o {
+    color: #c8c8c8;
+    display: inline;
+}
+
+label input[type="checkbox"] ~ i.fa.fa-check-square-o {
+    display: none;
+}
+
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o {
+    display: none;
+}
+
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o {
+    color: #2d92d5;
+    display: inline;
+}
+
+label:hover input[type="checkbox"] ~ i.fa {
+    color: #2d92d5;
+}
+
+div[data-toggle="buttons"] label.active {
+    color: #2d92d5;
+}
+
+div[data-toggle="buttons"] label {
+    -moz-user-select: none;
+    border: 0 solid #2d92d5;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 0;
+    margin-bottom: 0;
+    margin-right: 16px;
+    padding: 6px 0;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
+
+div[data-toggle="buttons"] label:hover {
+    color: #2d92d5;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none !important;
+}
+
+/*end of THE TAB 2 CONTENT*/
+
+/*Casscading bootstrap files */
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: none;
+}
+
+/* end Casscading bootstrap files */
+
+/*TAB STYLING CUSTOM*/
+
+/*.tab-style-custom {
+	box-sizing: border-box;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 3px;
+	margin-bottom: 5px;
+	border-bottom: 3px solid #eaeaea;
+}
+
+.tab-style-custom:hover {
+	border-bottom: 3px solid #2d92d5;
+	padding-bottom: 3px;
+}
+
+.tab-style-custom:active {
+	border-bottom: 3px solid #2d92d5;
+}
+
+*/
+
+ul.nav-tabs li {
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #eaeaea;
+}
+
+ul.nav-tabs li:hover {
+    border-bottom: 3px solid #2d92d5;
+}
+
+ul.nav-tabs li.active {
+    border-bottom: 3px solid #2d92d5;
+}
+
+/*end of TAB STYLING CUSTOM*/
+
+/*Making bootstrap 3 TABS style fit in*/
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+    border-bottom: none;
+
+}
+
+.nav-tabs.nav-justified > li > a {
+    border-bottom: none;
+    border-radius: none;
+}
+
+.nav-tabs > li > a {
+    border: none;
+}
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+    border: none;
+
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: none !important;
+}
+
+.nav > li > a:hover {
+    background-color: transparent !important;
+}
+
+/* end of Making bootstrap 3 TABS style fit in*/
+
+/*STEP THREE PRODUCT CART*/
+
+.cart_product, .product_price {
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 10px;
+}
+
+.border-top {
+    border-top: 1px solid #eee !important;
+    padding: 5px;
+}
+
+.row-position {
+    margin-bottom: 15px;
+}
+
+.colorboxes {
+    padding-top: 5px;
+    border-top: 1px solid #eee;
+    padding-left: 8px;
+    margin-top: 2px;
+}
+
+.color_box {
+    margin: 2px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border: 1px dashed #ccc;
+}
+
+.colorpicker {
+    width: 30px !important;
+    border: none !important;
+    background: #fff url(../images/wizard/cl-bg.png) no-repeat scroll 0 0;
+    color: #eee;
+}
+
+.colorpicker_popup {
+
+    width: 200px !important;
+    padding-left: 10px;
+    padding-top: 10px;
+    top: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.176);
+}
+
+.colors-available .color {
+    display: inline-block;
+    margin: 0px;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+}
+
+ul.colorpicker_popup li.color {
+    cursor: pointer;
+}
+
+.tabThree-product-container .colorboxes a:hover {
+    text-decoration: none;
+}
+
+.tabThree-product-container .colorboxes a:focus {
+    text-decoration: none;
+}
+
+.cart_product {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.edit_options {
+    text-align: right;
+}
+
+h4.step3_product_title {
+
+    color: #2d92d5;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 30px;
+}
+
+.edit_product_btn, .remove_product_btn {
+    font-size: 16px;
+    color: #888;
+    border: 1px solid #eee;
+    display: inline-block;
+    font-size: 16px;
+    padding: 1px 6px;
+}
+
+.edit_product_btn:hover {
+    color: #2d92d5;
+}
+
+.remove_product_btn:hover {
+    color: #2d92d5;
+}
+
+.text-centralized h6.text-centralized-head {
+    text-align: center;
+    font-size: 14px;
+    color: #5e6977;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+#tabThree .add_products {
+
+    border: 1px dashed #2d92d5;
+    padding: 30px 20px;
+    text-align: center;
+    display: block;
+    margin: 40px 0px 30px 0;
+    color: #2d92d5;
+}
+
+select#style {
+    margin-bottom: 10px;
+}
+
+select#products {
+    margin-bottom: 10px;
+}
+
+a#add {
+    margin-bottom: 10px;
+}
+
+label.print_type_label {
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+select.print_type_selection {
+    width: 50%;
+}
+
+select.print_type_selection_two {
+    width: 80%;
+}
+
+#tabThree select option {
+    font-size: 14px;
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+
+}
+
+#tabThree select {
+    font-size: 14px;
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+
+}
+
+/*.round_tooltip {
+   
+   	margin-left: 2px; 
+    color: #2d92d5;
+    font-size: 14px;
+   
+}*/
+
+#tabThree img.img-smiley-face {
+    width: 15px;
+    height: auto;
+
+}
+
+#tabThree p.text-description-select-p {
+
+    font-size: 14px;
+    color: #5e6977;
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px;
+    max-width: 85%;
+    font-style: italic;
+}
+
+#tabThree button.btn-pull-right {
+    display: inline-block;
+    margin-left: 70%;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#tabThree .product_btn_removed {
+    display: none;
+}
+
+/*STEP THREE PRODUCT CART*/
+
+/*TAB FOUR STYLE*/
+
+.tab-four-a {
+    margin-top: 40px;
+}
+
+#step4a_container label {
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+#step4a_container p.subtext_small {
+
+    font-size: 12px;
+    text-align: justify;
+    color: #5e5e5e;
+    margin-bottom: 50px;
+}
+
+#step4a_container p.subtext {
+
+    font-size: 14px;
+    text-align: justify;
+    color: #5e5e5e;
+    margin-bottom: 10px;
+}
+
+.tab-four-b {
+    margin-top: 40px;
+
+}
+
+.tab-four-b label {
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 30px;
+}
+
+.tab-four-b input.form-control {
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+}
+
+button#step-four-btn-next {
+    margin-top: 40px;
+}
+
+/*TAB FOUR STYLE*/
+
+/*STEP FIVE PRODUCT CART */
+
+#tabFive .cart_product:hover {
+    border: 1px solid #2d92d5;
+    transition: border 2s;
+}
+
+#tabFive .apparel-options-p {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    color: #5e5e5e;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+#tabFive .apparel-options-hr {
+    margin-top: 5px;
+}
+
+#tabFive #product_1_step-five .edit_product_price {
+    color: #5e5e5e;
+    border: 1px solid #eee;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 5px;
+    font-weight: bold;
+
+}
+
+#tabFive #product_1_step-five .edit_product_price:hover {
+    text-decoration: none;
+}
+
+#tabFive .colorboxes a:hover {
+    text-decoration: none;
+}
+
+#tabFive .colorboxes a:focus {
+    text-decoration: none;
+}
+
+#tabFive #step-five-container {
+    margin-top: 30px;
+}
+
+#tabFive #step-five-container input.form-control {
+
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.pull-up-30 {
+    margin-top: -30px;
+}
+
+#step-five-container a.edit_product_btn {
+    position: relative;
+    top: -10px;
+}
+
+p.disclaimer-p {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 11px;
+    color: #848080;
+    font-weight: 700;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 1.8px;
+}
+.modal-login{
+    padding: 15px;
+    width: auto;
+    height: auto;
+    background-color: rgba(0,0,0,.75)!important;
+}
+.modal-login #login-popup-form{ padding: 10px 0px}
+.modal-login input.form-control, .model-signup .form-control{
+    height: 40px;
+    border-radius: 7px;
+    color: #5e6977;
+    font-family: Avenir Next W1G;
+    font-weight: 300;
+}
+h5.modal-login-heading {
+    font-size: 2em;
+    color: #219cdc;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    text-align: center;
+    font-family: Rockwell, 'Roboto', sans-serif;
+    margin-top: 0px;
+
+}
+
+h3.modal-login-accordion-head {
+    font-size: 2em;
+    color: #219cdc;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Rockwell, 'Roboto', sans-serif;
+    letter-spacing: 1.8px;
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+h5.modal-login-accordion-subhead {
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 0.4px;
+    padding-left: 20px;
+}
+.signup-info{
+    font-family: Avenir Next W1G;
+    font-weight: 300;
+    color: #5e6977;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+form.input-accordion-login {
+    margin-bottom: 20px;
+}
+
+button#login-popup-button, button.signup-popup-button {
+    padding: 5px 60px;
+    font-weight: normal;
+    background-color: #219cdc;
+    border-color: #219cdc;
+    text-transform: uppercase;
+    font-family: Avenir Next W1G;
+}
+button#login-popup-button:hover, button.signup-popup-button:hover{
+    background-color: #FFF;
+    color: #219cdc;
+    border: 1px solid #219cdc;
+}
+
+a.pass-forgot-anchor-modal {
+    padding-left: 20px;
+    color: #2d92d5;
+    font-size: 16px;
+}
+
+button#register-popup-button {
+    padding: 10px 60px;
+    font-weight: 600;
+
+}
+
+#modalLogin .modal-header {
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    border: 0px;
+}
+
+.btn-holder {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*#modalLogin input {
+	-moz-box-shadow: inset 0 0 10px #e0e0e0;
+    -webkit-box-shadow: inset 0 0 10px #e0e0e0;
+    box-shadow: inset 0 0 10px #e0e0e0;
+}
+
+#modalSignup input {
+	-moz-box-shadow: inset 0 0 10px #e0e0e0;
+    -webkit-box-shadow: inset 0 0 10px #e0e0e0;
+    box-shadow: inset 0 0 10px #e0e0e0;
+}*/
+
+/* end of STEP FIVE PRODUCT CART */
+
+/*TOOLTIP BOOTSTRAP STYLING*/
+
+/*end of TOOLTIP BOOTSTRAP STYLING*/
+
+/*******************************
+* Does not work properly if "in" is added after "collapse".
+* Get free snippets on bootpen.com
+*******************************/
+.panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+    margin-bottom: 20px;
+}
+
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #eaeaea;
+    border-color: #EEEEEE;
+    border-radius: 5px;
+
+}
+
+.panel-title {
+    font-size: 14px;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Avenir Next W1G';
+    font-size: 15px;
+}
+
+.more-less {
+    float: right;
+    color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+}
+
+#headingOne, #headingTwo, #headingThree {
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #5e5e5e;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+
+}
+
+h4.general-head-style {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #5e5e5e;
+    font-family: 'Avenir Next W1G';
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p.general-p-style {
+    font-size: 14px;
+    color: #5e5e5e;
+    font-weight: 800;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+
+}
+
+p.description-text-p-accordion {
+    max-width: 95%;
+    border: 1px solid #eaeaea;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+p.design-description-p-accordion,
+p.location-description-p-accordion,
+p.number-of-colors-p-accordion {
+    padding-left: 10px;
+}
+
+img.img-size-lg {
+    width: 50%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.img-size-lg:hover {
+    border: 1px solid #2d92d5;
+}
+
+h4.files-upload-head-accordion {
+    margin-bottom: 30px;
+}
+
+#step-five-btn-submit {
+
+    display: block;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 14px;
+    font-weight: 600;
+    letter-spacing: 2.7px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 11px;
+    background-color: #65ba52;
+    color: #FFF;
+    border: 1px solid #65ba52;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#step-five-btn-submit:hover {
+
+    background-color: #FFF;
+    color: #65ba52;
+    transition: background-color 0.3s;
+
+}
+
+/* Popover branding */
+.popover {
+
+}
+
+.popover .arrow {
+    display: none;
+}
+
+.popover .popover-title {
+
+}
+
+.popover .popover-content {
+    color: white;
+    background-color: #2d92d5;
+    font-family: 'Avenir Next W1G';
+    border-radius: 5px;
+}
+
+.round_tooltip.glyphicon-question-sign {
+    cursor: pointer;
+    color: #2d92d5;
+}
+
+/*@media-query rules bellow*/
+
+@media screen and (max-width: 340px) {
+
+    .btn-modal-style {
+
+        width: 180px;
+        height: auto;
+        font-size: 7px !important;
+        padding: 8px 24px 8px 8px !important;
+        letter-spacing: none;
+        margin-left: 0;
+
+    }
+
+    .dropdown button {
+        margin-bottom: 5px;
+    }
+
+    #step-five-btn-submit {
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 9px;
+    }
+
+    /*.dd-button {
+        font-size: 14px;
+        padding-left: 10px !important;
+        padding-right: 45px !important;
+    }*/
+    .btn-wrapper-advance-search {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 341px) {
+
+    .dd-menu li {
+        padding: 15px 75px !important;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    footer {
+        text-align: center;
+    }
+
+    footer p.description-foot {
+        padding: 10px 10px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 990px) {
+
+    footer img.footer-img {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    img.designs-img {
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /*	img.navbar-logo-img {
+            width: 150px;
+            height: auto;
+            position: relative;
+            top: -5px;
+        }
+
+        ul.navbar-nav li.nav-item a.nav-link#green-btn-nav {
+            width: 110px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul.navbar-nav li.nav-item a.nav-link {
+            text-align: center;
+        }*/
+    a#carousel-modal img.carousel-arrow-both-modal {
+        display: none;
+    }
+
+    .modal-content .modal-body button.close {
+        position: relative;
+        top: -13px;
+        right: -10px;
+        z-index: 99999999999;
+    }
+
+    button.navbar-toggle {
+
+        border: 1px solid #2d92d5;
+    }
+
+    button.navbar-toggle span {
+        background-color: #2d92d5 !important;
+    }
+
+    button.navbar-toggle:hover {
+        opacity: 0.7;
+    }
+
+    ul.navbar-nav li {
+
+        text-align: left;
+    }
+
+    ul.navbar-nav li a {
+        display: inline-block;
+
+    }
+
+    ul.nav-tabs {
+        display: block;
+    }
+    ul.nav-tabs li{
+        display: none;
+    }
+    ul.nav-tabs li:active, ul.nav-tabs li.active{
+        display: block;
+    }
+
+    ul.nav-tabs li.step-five a {
+        text-align: left !important;
+
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
+    /*ul.navbar-nav li.nav-item a.nav-link#green-btn-nav {
+        margin-left: 10px;
+    }*/
+    ul.nav-tabs .step-five {
+        font-size: 8px !important;
+    }
+
+    ul.nav-tabs span.number-glyph {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    button#login-popup-button {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    a.pass-forgot-anchor-modal {
+
+        color: #2d92d5;
+        margin-bottom: 10px;
+
+    }
+    button#modal-login-btn-back{ width: 100%;}
+    button#register-popup-button {
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        display: block;
+        margin-top: 10px;
+
+    }
+
+    a#add {
+        float: right;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    img.navbar-logo-img {
+        width: 150px;
+        height: auto;
+    }
+
+    img.product-avatar {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .panel-title > a {
+        font-size: 12px;
+    }
+
+    /*	#step-five-btn-submit {
+            display: block;
+            width: 90%;
+            font-size: 8px;
+            padding: 10px 20px;
+        }*/
+    button#modal-login-btn-back {
+        display: block;
+        width: 90%;
+        margin-bottom: 10px;
+
+    }
+
+    button#modal-login-btn-sign-up {
+        display: block;
+        width: 90%;
+    }
+
+    .button-wrapper-blue {
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .button-wrapper-blue button.btn-dimensions {
+        display: block;
+        margin-bottom: 10px;
+        height: 30px;
+        width: 150px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+
+    img.btn-arrow-down {
+        left: 20px;
+    }
+
+    img.btn-arrow-down-up {
+        left: 22px;
+    }
+
+    #modalLargeProducts .inline-color-picker-modal {
+
+        height: 17px;
+        width: 17px;
+    }
+
+    label.btn span {
+        font-size: 10px;
+    }
+
+    a.btn-search-gender {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    #tabTwo .col-md-12 .form-number-counter {
+        width: 20%;
+    }
+
+    #tabTwo .col-sm-6 .form-number-counter {
+        width: 40%;
+    }
+   .modal-login .modal-dialog{ width: 700px;}
+}
+
+@media screen and (min-width: 500px) {
+    button#modal-login-btn-back {
+        padding: 5px 53px;
+        font-family: Avenir Next W1G;
+        font-weight: normal;
+        color: #219cdc;
+        border-color: #219cdc;
+        text-transform: uppercase;
+    }
+    button#modal-login-btn-back:hover{
+        background-color: #2d92d5;
+        border-color: #2d92d5;
+        color: #FFF;
+    }
+
+    button#modal-login-btn-sign-up {
+        padding: 10px 80px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    img.navbar-logo-img {
+        position: relative;
+        top: 10px;
+    }
+
+    h3.modal-login-accordion-head {
+        margin-top: 35px;
+
+    }
+
+    h4.general-h4-text-centered {
+        text-align: center !important;
+    }
+
+    p.general-p-text-centered {
+        text-align: center !important;
+    }
+    #modalSignup .modal-dialog{ width: 700px;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px) {
+
+    /*ul.navbar-nav li.nav-item a.nav-link {
+        padding-right: 5px;
+    }
+
+    ul.navbar-nav li.nav-item a.nav-link {
+        font-size: 80%;
+
+    }
+
+    ul.navbar-nav li.nav-item a.nav-link button {
+        font-size: 80%;
+        top: -6px;
+
+    }
+
+    img.navbar-logo-img {
+        padding-top: 4px;
+    }*/
+    footer p.description-foot {
+        margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    .btn-wrapper {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .step-five {
+        font-size: 9px !important;
+    }
+
+    .apparel-control-left {
+        margin-left: 70px;
+    }
+
+    .apparel-control-right {
+        margin-right: 70px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .hidden-md-down {
+        display: none;
+    }
+
+    #campaign-section {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #carousel-row {
+        margin-top: -10px;
+    }
+
+    input#campaign-name {
+        width: 80%;
+
+    }
+
+    .pull-right-lg {
+        float: right;
+    }
+
+    #tabTwo .call-to-action-checkbox-click {
+        width: 80%;
+    }
+
+    #step-five-btn-submit {
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
+        letter-spacing: 3.7px;
+        font-size: 15px;
+    }
+
+    button#login-popup-button {
+        padding: 5px 60px;
+        font-family: Avenir Next W1G;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    a.pass-forgot-anchor-modal {
+        padding-left: 20px;
+        color: #2d92d5;
+        font-size: 16px;
+    }
+
+    button#register-popup-button {
+        padding: 5px 60px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    footer p.description-foot {
+        padding-right: 70px;
+    }
+
+    h2.decorated {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .btn-wrapper {
+        margin-bottom: 60px;
+    }
+
+    /*ul.navbar-nav {
+        margin-right: -50px;
+    }*/
+    footer p.description-foot {
+        margin-right: 75px;
+    }
+
+    .list-tag-products {
+        margin-top: 50px;
+    }
+
+    p.product-desc-p {
+        max-width: 600px;
+    }
+
+    ul.nav-tabs {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    img.carousel-arrow-left {
+
+        margin-left: -70px;
+
+    }
+
+    img.carousel-arrow-right {
+
+        margin-right: -50px;
+    }
+
+    .dropdown-toggle::after {
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    #tabTwo img.tab2-img-display {
+        margin-top: 50px;
+    }
+
+    a#add {
+        position: relative;
+        top: 5px;
+    }
+    .border-right-gray{
+        border-right: 1px solid #dedede;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    h6.blue-head-foot {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1285px) {
+    img.arrow-left-carousel {
+        left: -90px;
+    }
+
+    img.arrow-right-carousel {
+        right: -90px;
+    }
+
+    .apparel-control-left {
+        margin-left: 70px;
+    }
+
+    .apparel-control-right {
+        margin-right: 70px;
+    }
+
+}
+
+/* Select2 styling */
+
+.multiselect-container {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.select2-multiple {
+    width: 40%;
+}
+
+span.select2-selection__choice__remove {
+    float: right;
+    margin-left: 10px;
+}
+
+.select2-selection {
+    border: 2px solid lightgray !important;
+    background-color: transparent !important;
+}
+
+.button-wrapper-blue button.active {
+    border-color: #FFF;
+    background-color: #FFF;
+    color: #3596d6;
+    box-shadow: none;
+
+}
+
+.button-wrapper-blue button.active:hover {
+    background-color: #FFF;
+    color: #2d92d5;
+    border-color: #FFF !important;
+    box-shadow: none;
+
+}
+
+.button-wrapper-blue button.active:focus {
+    background-color: #FFF;
+    color: #2d92d5;
+    border-color: #FFF !important;
+    box-shadow: none;
+
+}
+
+.btn-wrapper-advance-search select.select-options-dropdown-styling {
+    padding-right: 50px !important;
+
+}
+
+.scroll-down-spinner {
+    color: #2d92d5;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Filter by styles */
+.filter-by + span {
+    width: 300px !important;
+    text-align: left !important;
+    border: 0px;
+    outline: 0;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+
+    margin-right: 15px;
+}
+
+.filter-by + span .select2-selection {
+    border: none !important;
+}
+
+.filter-by + span .select2-selection .select2-selection__rendered {
+    color: #898989;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 25px;
+}
+
+.filter-by + span .select2-selection .select2-selection__arrow {
+    top: 10px !important;
+}
+
+.filter-by + span .select2-selection .select2-selection__arrow b {
+    border-color: lightgray transparent transparent transparent;
+}
+
+/*select#select-first-drop span.select2-selection__rendered {
+	background-color: #FFF;
+	border-radius: 7px;
+}
+
+select#select-first-drop .select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #5e6977;
+	line-height: 30px;
+}*/
+
+/* end of Select2 styling */
+
+/*SELECT BUTTON STYLING TEST*/
+
+/*select.select-btn-filter {
+
+	background-color: #FFF;
+	border-color: #FFF;
+	border-radius: 7px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	color: gray;
+	padding: 15px 50px;
+
+}
+
+select.select-btn-filter:hover {
+	background-color: transparent;
+	border-color: gray;
+}*/
+
+/*TRYOUT*/
+
+h1.test-content {
+    text-align: center;
+    color: #2d92d5;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+/*end of TRYOUT*/
+
+/*Making the content of other inactive tabs not appear*/
+
+.tab-pane:not(.active) {
+    display: none !important;
+}
+
+/* end of Making the content of other inactive tabs not appear*/
+
+.search-box {
+    margin-top: 20px;
+}
+
+#custom-search-input {
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input {
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button {
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover {
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search {
+    font-size: 23px;
+}
+
+.search-box input {
+    background-color: none !important;
+    background: none !important;
+}
+
+span.input-group-btn button:focus {
+    outline-color: none !important;
+    outline-style: none !important;
+
+}
+
+span.input-group-btn button i.glyphicon:hover {
+    color: #2d92d5;
+}
+
+.btn-search-gender.active {
+    background-color: #2d92d5;
+    border-color: white;
+    color: white;
+    transition: color, border-color 1s ease-in-out;
+}
+
+.color_slot {
+    text-align: center !important;
+    vertical-align: top;
+    background-size: cover;
+}
+
+.color_slot .fa {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.color_slot.active:hover .fa {
+    display: inline-block;
+}
+
+#tabFive .colorpicker {
+    display: none;
+}
+
+/*
+	Loading animation
+ */
+#loading {
+    min-height: 300px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: 38px;
+    text-align: center;
+    color: #aaa;
+    margin: auto;
+}
+
+.bokeh {
+    border: 0.01em solid rgba(150, 150, 150, 0.1);
+    border-radius: 50%;
+    font-size: 100px;
+    height: 1em;
+    list-style: outside none none;
+    margin: 0 auto;
+    position: relative;
+    top: 35%;
+    width: 1em;
+    z-index: 2147483647;
+}
+
+.bokeh li {
+    border-radius: 50%;
+    height: 0.2em;
+    position: absolute;
+    width: 0.2em;
+}
+
+.bokeh li:nth-child(1) {
+    animation: 1.13s linear 0s normal none infinite running rota, 3.67s ease-in-out 0s alternate none infinite running opa;
+    background: #00c176 none repeat scroll 0 0;
+    left: 50%;
+    margin: 0 0 0 -0.1em;
+    top: 0;
+    transform-origin: 50% 250% 0;
+}
+
+.bokeh li:nth-child(2) {
+    animation: 1.86s linear 0s normal none infinite running rota, 4.29s ease-in-out 0s alternate none infinite running opa;
+    background: #ff003c none repeat scroll 0 0;
+    margin: -0.1em 0 0;
+    right: 0;
+    top: 50%;
+    transform-origin: -150% 50% 0;
+}
+
+.bokeh li:nth-child(3) {
+    animation: 1.45s linear 0s normal none infinite running rota, 5.12s ease-in-out 0s alternate none infinite running opa;
+    background: #fabe28 none repeat scroll 0 0;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 -0.1em;
+    transform-origin: 50% -150% 0;
+}
+
+.bokeh li:nth-child(4) {
+    animation: 1.72s linear 0s normal none infinite running rota, 5.25s ease-in-out 0s alternate none infinite running opa;
+    background: #88c100 none repeat scroll 0 0;
+    margin: -0.1em 0 0;
+    top: 50%;
+    transform-origin: 250% 50% 0;
+}
+
+@keyframes opa {
+    12% {
+        opacity: 0.8;
+    }
+    19.5% {
+        opacity: 0.88;
+    }
+    37.2% {
+        opacity: 0.64;
+    }
+    40.5% {
+        opacity: 0.52;
+    }
+    52.7% {
+        opacity: 0.69;
+    }
+    60.2% {
+        opacity: 0.6;
+    }
+    66.6% {
+        opacity: 0.52;
+    }
+    70% {
+        opacity: 0.63;
+    }
+    79.9% {
+        opacity: 0.6;
+    }
+    84.2% {
+        opacity: 0.75;
+    }
+    91% {
+        opacity: 0.87;
+    }
+}
+
+@keyframes rota {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* End loading animations */
+
+.products-img {
+    max-width: 179px;
+    max-height: 172px;
+}
+
+.loading-image {
+    background-image: url('../images/download.gif');
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.nav>li>.tab-padding {
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    font-family: 'Avenir Next W1G';
+    color: #777;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .carousel-inner > .item {
+        display: block;
+    }
+
+}
+@media screen and (max-width: 992px){
+    h3.modal-login-accordion-head{
+        margin-top: 0px;
+    }
+
+}
+

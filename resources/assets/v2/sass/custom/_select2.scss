@@ -1,0 +1,109 @@
+.multiselect-container {
+  margin: 30px auto 20px auto;
+  text-align: center;
+}
+
+.multiselect-container > .select2:before {
+  content: "\e003";
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  color: #B5B5B5;
+  left: 0;
+}
+
+.multiselect-container .select2-container--default .select2-selection--multiple {
+  border-color: #B4CAE4 !important;
+  color: #202424;
+}
+
+.select2-selection {
+  border: 2px solid lightgray !important;
+  background-color: transparent !important;
+}
+
+.select2-container--default .select2-selection--multiple ul.select2-selection__rendered {
+  padding: 0 0 0 28px;
+}
+
+.multiselect-container .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #D2E7FB;
+  border-color: #D2E7FB;
+  color: #202424;
+  font-weight: 500;
+}
+
+span.select2-selection__choice__remove {
+  float: right;
+  margin-left: 10px;
+}
+
+.btn-wrapper-advance-search {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.btn-wrapper-advance-search select.select-options-dropdown-styling {
+  padding-right: 50px !important;
+}
+
+.filter-by+span {
+  width: 200px !important;
+  text-align: left !important;
+  border: 0px;
+  outline: 0;
+  background: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.filter-by+span .select2-selection {
+  border: none !important;
+}
+
+.filter-by+span .select2-selection .select2-selection__rendered {
+  color: #898989;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 25px;
+}
+
+.filter-by+span .select2-selection .select2-selection__arrow {
+  top: 5px !important;
+}
+
+.filter-by+span .select2-selection .select2-selection__arrow b {
+  border-color: lightgray transparent transparent transparent;
+}
+
+.btn-wrapper-advance-search select.select-options-dropdown-styling {
+  padding-right: 50px !important;
+}
+
+.filter-by+span {
+  width: 200px !important;
+  text-align: left !important;
+  border: 0px;
+  outline: 0;
+  background: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.select2-results__option.select2-results__message {
+  display: none;
+}
+
+.select2-container.select2-container--default .select2-results__option, .select2-container.select2-container--default .select2-results__option--highlighted {
+  font-weight: 500;
+}

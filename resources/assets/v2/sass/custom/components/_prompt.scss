@@ -1,0 +1,15 @@
+
+#gh-prompt {
+  .modal-title {
+    @include rockwell-standard-header;
+  }
+  .modal-body {
+    text-align: center;
+    padding: 25px 15px;
+  }
+  .modal-footer {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    text-align: center;
+  }
+}

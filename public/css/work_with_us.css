@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900');
+
+/**************/
+.work-with-us-container .single-product { width:100%; float:left;}
+.work-with-us-container .product-left { width:714px; float:left; padding:20px 40px; border:1px solid #eeeeee; text-align:center;}
+.work-with-us-container .product-left h1{ text-align:center; width:100%; text-align:center; color:#000000; font-size:38px; text-transform:capitalize;   word-break: break-all;}
+
+.work-with-us-container .description-right { float:right; width:400px; }
+.work-with-us-container .des-wrap { float:right; width:100%; background:#f5f5f5; border:1px solid #efeff0; padding:35px 45px;}
+.work-with-us-container .product-tag { width:100%; float:left; padding:0 0 20px; border-bottom:1px solid #fff; margin-bottom:20px;}
+.work-with-us-container .product-tag span { width:100%; float:left; color:#111111; font-size:14px;}
+.work-with-us-container .product-tag span a {  color:#68899a; }
+
+/****Progessbar****/
+.work-with-us-container .tooltip{  position:relative; float:right;}
+.work-with-us-container .tooltip > .tooltip-inner {background-color:#66baf3; padding:3px 15px; color:#fff; font-weight:bold; font-size:14px; border:1px solid #51a6de; width:60px; font-family: 'Open Sans', sans-serif; font-weight:400;}
+.work-with-us-container .popOver + .tooltip > .tooltip-arrow {  border-left:8px solid transparent; border-right: 8px solid transparent; border-top:8px solid #66baf3; font-size: 12px; bottom: -2px; left: 50%;}
+.work-with-us-container .barWrapper { float: left; margin: 40px 0 0; width: 100%; }
+.work-with-us-container .progress{ border-radius:0; overflow:visible; }
+.work-with-us-container .progress-bar{ width:55%!important; background:#268ed3; -webkit-transition: width 1.5s ease-in-out; transition: width 1.5s ease-in-out; border-radius: 5px;}
+.work-with-us-container .progress { margin:0; height:9px; border-radius:5px;}
+.work-with-us-container .tooltip.top { left: 10%!important; top: -38px !important;}
+.work-with-us-container .product_target { width:100%; float:left; margin: 10px 0;}
+.work-with-us-container .time_left { color:#bcbcbc; font-size:13px; float:left; letter-spacing:1px; }
+.work-with-us-container .target { color:#bcbcbc; font-size:13px; float:right; letter-spacing:1px;}
+
+.work-with-us-container .qty { width:40px; float:left;}
+.work-with-us-container .qty input { width:100%; float:left; border-radius:4px; background:#f5f5f5; border:1px solid #e5e2e2; height:36px; font-family: 'Open Sans', sans-serif;  text-align:center; padding:0 2px; font-size:14px; color:#333333; }
+.work-with-us-container .dropdown { width:100%; border:1px solid #e5e2e2; border-radius:4px; position:relative; overflow:hidden;}
+.work-with-us-container .dropdown select { width:100%; padding:0 5px; height: 36px; width:130%}
+.work-with-us-container .dropdown::after {
+    content: "";
+    height: 11px;
+    position: absolute;
+    right: 8px;
+    top:12px;
+    width: 9px;
+}
+.work-with-us-container .dropdown-select { background: rgba(0, 0, 0, 0)!important;  border: 0 none; border-radius: 0; color: #333333; font-size: 13px;  line-height: 14px; margin: 0; position: relative; text-shadow: 0 1px white; width: 100%; height:36px;}
+.work-with-us-container .product-size { width:80px; float:left; padding:0 10px;}
+.work-with-us-container .product-select { width:180px; float:left;}
+.work-with-us-container .product_cart { clear: both; float: left; margin: 5px 0 0; position: relative; width: 100%;}
+.work-with-us-container .product_cart::after {
+    background:#e5e2e2;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 24px;
+    width: 100%;
+}
+.work-with-us-container .product_cart label { font-size:14px; font-weight:normal; padding-bottom:4px; margin-bottom:9px; position:relative;}
+.work-with-us-container .add-another { width:100%; float:left; text-align:center; color:#3d9cdd; font-size:13px; margin:7px 0; }
+.work-with-us-container .add-another a { width:100%; float:left; padding:13px 0; border-top:1px solid #e5e2e2; border-bottom:1px solid #e5e2e2; border-top:1px solid #e5e2e2;  font-size:14px; }
+.work-with-us-container .add-another a:hover { color:#3d9cde; text-decoration:none; }
+.work-with-us-container .price { font-size:24px; color:#000000; text-align:center; float:left; width:100%; font-family: 'Open Sans', sans-serif; border-bottom:1px solid #e5e2e2;  padding:0 0 10px; font-weight:600;}
+.work-with-us-container .buy-now { margin:7px 0;float:left; width:100%; background:#70ce66; color:#fff; font-size:22px; padding:12px 0; background:#70ce66; margin:7px 0;}
+.work-with-us-container .share-feed { display:inline-block; padding:20px 0 0; }
+.work-with-us-container .share-feed span { font-size:12px; color:#525252; display:inline-block; text-transform:uppercase; float: left; padding:2px 0 0;}
+.work-with-us-container .share-feed ul {display:inline-block; }
+.work-with-us-container .share-feed ul li{ list-style:none; display:inline-block; margin-left:6px;}
+.work-with-us-container .final_des { float:left; width:100%; padding:10px 0;}
+.work-with-us-container .final_des p { font-size:16px; color:#3d3c3c; line-height:25px;}
+
+.work-with-us-container .become_member {width:100%; float:none; text-align:center; padding:90px 0; background:url(../images/reward_bg.jpg)no-repeat top;
+    background-size: cover;}
+.work-with-us-container .become_member h1 { text-align:center; color:#1f9bde; font-size:54px; letter-spacing:1.6px; font-family: 'Rockwell'; text-transform:uppercase;}
+.work-with-us-container .become_member span { text-align:center; color:#565656; font-size:19px; letter-spacing:2px; margin: 6px 0 0;
+    display: block;}
+.work-with-us-container .become_member ul{width:100%; float:left; margin:40px 0 70px; }
+.work-with-us-container .become_member ul li {width:48%; float:left; margin:14px 0 0; }
+.work-with-us-container .become_member ul li:nth-child(2n) {float:right;}
+.work-with-us-container .become_member ul li input {width:100%; border:2px solid #1f9add; color:#1f9add; background:transparent; color:#1f9bde; font-size:18px; font-family: 'Avenir Next W1G'; min-height:49px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; padding:10px 15px;}
+.work-with-us-container .become_member ul li button, .become_member ul li input[type="submit"] { width:100%; min-height:49px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;  background:#1f9bde; color:#fff; letter-spacing:2px; text-align:center; font-size:20px; font-family: 'Avenir Next W1G'; text-transform:uppercase;}
+.work-with-us-container .become_member label{color:#1f9bde; text-transform:uppercase; font-size:19px; letter-spacing:1px; font-family: 'Avenir Next W1G'; font-weight: 500;}
+.work-with-us-container .the_benefit{ width:100%; float:left;margin:60px 0; }
+.work-with-us-container .the_benefit h2 { width:100%; float:left; font-size:50px; color:#3498db; text-align:center; text-transform:uppercase; font-family: 'Rockwell'; line-height:40px; letter-spacing:2.6px}
+.work-with-us-container .the_benefit h2:after {
+    background: #dbdcde;
+    width: 71%;
+    height: 1px;
+    content: '';
+    position: relative;
+    display: inline-block;
+}
+.work-with-us-container .the_benefit ul {width:100%; float:left; margin:28px 0 0; }
+.work-with-us-container .the_benefit ul li{ vertical-align: top; display:inline-block; text-align:center; width:31%; margin-top:20px; }
+.work-with-us-container .the_benefit ul li:nth-child(3n-1){ margin-left:2%; margin-right:2%;}
+.work-with-us-container .the_benefit ul li i { width:116px; height:116px; line-height:116px; display:inline-block; background:#3498db; border-radius:100%; vertical-align:middle;}
+.work-with-us-container .the_benefit ul li i img { line-height:116px;}
+.work-with-us-container .the_benefit ul li h6 { font-size:24px; color:#575757; text-transform:uppercase; text-align:center; font-family: 'Rockwell'; margin:36px 0 12px; letter-spacing:2.4px;}
+.work-with-us-container .the_benefit ul li p { font-size:17px; text-align:center; color:#4E4E4E; line-height:25px; font-family: 'Avenir Next W1G'; font-weight:500; min-height:115px;}
+
+.work-with-us-container .the_benefit ul li i img { line-height: 116px; vertical-align: middle;}
+
+.work-with-us-container .the_platform {width:84%; margin:0 auto;}
+.work-with-us-container .plt_lft {float:left; width:55%; padding:56px 0;}
+.work-with-us-container .plt_lft h2 { color:#4A9BD6; letter-spacing:2.6px; font-size:50px; border-bottom:1px solid #989898; padding-bottom:20px; margin-bottom:30px; text-transform:uppercase; text-align:left; font-family: 'Rockwell'; }
+.work-with-us-container .plt_lft p { color:#4F4F51; font-size:22px; text-align:left; font-family: 'Avenir Next W1G'; font-weight:500;}
+.work-with-us-container .plt_lft ul { width:100%; float:left; margin-top:20px}
+.work-with-us-container .plt_lft ul li { width:100%; float:left; color:#4F4F51; font-size:24px; background:url(../images/check_ico.png)no-repeat top left; font-family: 'Rockwell'; padding:0 0 7px; padding-left:70px; margin-top:20px; text-transform:uppercase; letter-spacing: 1.2px;}
+.work-with-us-container .plt_mob {width:42%; float:right;}
+.work-with-us-container .plt_mob img {width:100%; float:right;}
+
+.work-with-us-container .the_community {clear:both; text-align:center; width:100%; margin:50px 0 100px;}
+.work-with-us-container .the_community h2 { letter-spacing:1.6px; color:#3498db; font-size:50px; text-align:center; text-transform:uppercase; font-family: 'Rockwell';}
+.work-with-us-container .the_community span{ color:#4f4f51; font-size:18px; font-family: 'Avenir Next W1G'; }
+.work-with-us-container .the_community ul li { width:31%; display:inline-block; text-align:center; vertical-align:top; margin-top:40px;}
+.work-with-us-container .the_community ul li figure{ width:126px; display: inline-block; height:126px; border-radius:100%; border:6px solid #e9ecf2; overflow: hidden;}
+.work-with-us-container .the_community ul li:nth-child(3n-1){ padding-left:3%; padding-right:3%;}
+.work-with-us-container .the_community h6 {color:#2f3542; font-size:22px; font-family: 'Avenir Next W1G'; margin:15px 0 5px;}
+.work-with-us-container .the_community hr { border-top:1px solid #d5d7d9; width:48px; display: inline-block; margin:10px 0;}
+.work-with-us-container .the_community p {color:#4f4f51; font-size:20px; line-height:26px; font-family: 'Avenir Next W1G'; min-height: 131px;}
+.work-with-us-container .client-name {width:100%; float:left; border-top:1px solid #88bee1; padding:20px 0 0; margin:35px 0 0; font-size:18px; font-family: 'Avenir Next W1G'; font-weight:400; letter-spacing:0px;}
+.work-with-us-container .client-name span {display:block; font-weight:500; font-family: 'Avenir Next W1G';}
+
+.work-with-us-container .faq_ques{width:76%; margin:50px auto; text-align:center;}
+.work-with-us-container .faq_ques h2 {width:100%; letter-spacing:2.6px; float:left; font-size:50px; line-height:30px; color:#1f9bde; text-align:center; text-transform:uppercase; font-family: 'Rockwell'; position:relative; }
+.work-with-us-container .faq_ques h2:after {
+    background: #dbdcde;
+    width: 90%;
+    height: 1px;
+    content: '';
+    position: relative;
+    display: inline-block;
+}
+.work-with-us-container .faq_ques li { text-align:center; width:100%; float:left; margin:44px 0 0;}
+.work-with-us-container .faq_ques li h5 { text-align:center; width:100%; font-size:27px; color:#3493d2; text-transform:uppercase; font-family: 'Rockwell'; letter-spacing:.4px; letter-spacing:2.2px;}
+.work-with-us-container .faq_ques li p { text-align:center; width:100%; font-family: 'Avenir Next W1G'; font-weight:500; color:#4f4f51; font-size:19px; line-height:24px; margin:12px 0 0; font-weight:400;}
+.work-with-us-container .sign_up_btn { background:#1f9bde; padding:14px 60px; text-transform:uppercase; font-size:22px; display:inline-block; letter-spacing:2px; font-family: 'Avenir Next W1G'; font-weight:normal; color:#fff; border-radius:7px; -moz-border-radius:7px; -webkit-border-radius:7px; margin:30px 0 0;}
+.work-with-us-container .sign_up_btn:hover { color:#fff; text-decoration:none;}
+
+/***********/
+/**Media
+/*********/
+@media screen and (max-width: 1192px) {
+    .work-with-us-container .product-left { width:60%;}
+    .work-with-us-container .description-right { width:38%;}
+    .work-with-us-container .des-wrap { padding:30px;}
+    .work-with-us-container .product-left h1{font-size:34px; }
+}
+
+@media (max-width: 768px) {
+    .work-with-us-container .product-left { width:100%; }
+    .work-with-us-container .product-left h1{font-size:30px;  }
+    .work-with-us-container .description-right { width:100%; margin:25px 0 0;}
+    .work-with-us-container .order-sum-rht { margin:30px 0 0;}
+}
+
+
+.work-with-us-container .become_member {
+    bottom: 0 !important;
+}
+.work-with-us-container .become_member:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+.work-with-us-container .become_member ul {
+    padding: 0;
+    border: 0;
+}
+.work-with-us-container .become_member ul li {
+    list-style: none;
+}
+.work-with-us-container .plt_lft ul {
+    padding: 0;
+    border: 0;
+}
+.work-with-us-container .plt_lft ul li {
+    list-style: none;
+}
+.work-with-us-container .faq_ques ul {
+    padding: 0;
+    border: 0;
+}
+.work-with-us-container .faq_ques li {
+    list-style: none;
+}
+.work-with-us-container .btn-group.bootstrap-select {
+    border: 2px solid #1f9add;
+    background: transparent;
+    color: #1f9bde;
+    font-size: 18px;
+    font-family: 'Avenir Next W1G';
+    min-height: 49px;
+}
+.work-with-us-container .btn.dropdown-toggle.btn-default {
+    background: transparent;
+    text-transform: none;
+}
+.work-with-us-container .btn.dropdown-toggle.btn-default:hover,
+.work-with-us-container .btn.dropdown-toggle.btn-default:focus,
+.work-with-us-container .btn.dropdown-toggle.btn-default:active {
+    outline: none;
+}
+.work-with-us-container .btn.dropdown-toggle.btn-default > span {
+    margin: 0;
+}
+.work-with-us-container .dropdown-menu.inner li {
+    margin: 0;
+    width: 100%;
+    float: none !important;
+    background: transparent;
+}
+.work-with-us-container .dropdown-menu.inner li:hover {
+    background: #1f9add;
+}
+.work-with-us-container .dropdown-menu.inner li a {
+    float: none;
+    background: transparent;
+    padding: 3px 10px;
+    font-size: 24px;
+    font-family: 'Avenir Next W1G';
+    box-shadow: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: 5px 5px 0px #0c6e14;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+.work-with-us-container .message-container ul {
+    float: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.work-with-us-container .message-container ul li {
+    float: none !important;
+    width: 100% !important;
+}
+@media only screen and (max-width : 768px) {
+    .work-with-us-container .become_member h1 {
+        text-align: center;
+        color: #1f9bde;
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        font-family: 'Rockwell';
+        text-transform: uppercase;
+        padding: 0 10px;
+    }
+    .work-with-us-container .become_member span {
+        text-align: center;
+        color: #565656;
+        font-size: 11px;
+        letter-spacing: 1px;
+        margin: 6px 0 0;
+        display: block;
+    }
+    .work-with-us-container .become_member ul li {
+        width: 100%;
+        float: left;
+        margin: 7px 0 0;
+    }
+    .work-with-us-container .the_benefit {
+        width: 100%;
+        float: left;
+        margin: 10px 0 0;
+    }
+    .work-with-us-container .the_benefit ul li {
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .work-with-us-container .the_benefit ul li h6 {
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Rockwell';
+        margin: 16px 0 7px;
+        color: #323232;
+        letter-spacing: 1px;
+    }
+    .work-with-us-container .the_benefit ul li p {
+        font-size: 14px;
+        text-align: center;
+        color: #2d2d2d;
+        line-height: 22px;
+        font-family: 'Avenir Next W1G';
+        font-weight: 400;
+        min-height: initial;
+    }
+    .work-with-us-container .the_benefit ul li i img {
+        line-height: 116px;
+        vertical-align: middle;
+        height: 46px;
+    }
+    .work-with-us-container .the_benefit ul li i {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        display: inline-block;
+        background: #3498db;
+        border-radius: 100%;
+        vertical-align: middle;
+    }
+    .work-with-us-container .the_benefit h2 {
+        width: 100%;
+        float: left;
+        font-size: 24px;
+        color: #3498db;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Rockwell';
+        letter-spacing: 2px;
+        border-bottom: 1px solid #dbdcde;
+        padding-bottom: 16px;
+    }
+    .work-with-us-container .the_benefit h2:after {
+        display: none;
+    }
+    .work-with-us-container .the_benefit ul {
+        padding: 0;
+        margin: 0;
+    }
+    .work-with-us-container .plt_lft h2 {
+        color: #3498db;
+        letter-spacing: 2.4px;
+        font-size: 24px;
+        border-bottom: 1px solid #989898;
+        padding-bottom: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Rockwell';
+        margin-bottom: 16px;
+    }
+    .work-with-us-container .plt_lft {
+        float: left;
+        width: 100%;
+        padding: 40px 0;
+    }
+    .work-with-us-container .plt_lft p {
+        color: #2d2d2d;
+        font-size: 14px;
+        text-align: left;
+        font-family: 'Avenir Next W1G';
+        font-weight: 500;
+    }
+    .work-with-us-container .plt_lft ul {
+        width: 100%;
+        float: left;
+        margin: 10px 0 0;
+    }
+    .work-with-us-container .plt_lft ul li {
+        width: 100%;
+        float: left;
+        color: #505050;
+        font-size: 14px;
+        list-style: none;
+        background: url(../images/check_ico.png)no-repeat top left;
+        font-family: 'Rockwell';
+        padding: 0 0 5px;
+        padding-left: 30px;
+        margin-top: 7px;
+        text-transform: uppercase;
+        line-height: 18px;
+        letter-spacing: .8px;
+        background-size: 18px 18px;
+    }
+    .work-with-us-container .plt_mob {
+        width: 100%;
+        float: right;
+    }
+    .work-with-us-container .plt_mob img {
+        width: 100%;
+        float: right;
+    }
+    .work-with-us-container .the_community h2 {
+        color: #3498db;
+        letter-spacing: 2.4px;
+        font-size: 24px;
+        border-bottom: 1px solid #989898;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Rockwell';
+    }
+    .work-with-us-container .the_community span {
+        color: #2d2d2d;
+        font-size: 12px;
+        font-family: 'Avenir Next W1G';
+        letter-spacing: .5px;
+    }
+    .work-with-us-container .the_community ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    .work-with-us-container .the_community ul li {
+        width: 100%;
+    }
+    .work-with-us-container .the_community h6 {
+        color: #2f3542;
+        font-size: 17px;
+        font-family: 'Avenir Next W1G';
+        margin: 15px 0 5px;
+        font-weight: 400;
+    }
+    .work-with-us-container .the_community hr {
+        border-top: 1px solid #d5d7d9;
+        width: 48px;
+        display: inline-block;
+        margin: 10px 0;
+    }
+    .work-with-us-container .the_community p {
+        color: #2d2d2d;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: 'Avenir Next W1G';
+        min-height: initial;
+    }
+    .work-with-us-container .client-name span {
+        display: block;
+        font-weight: 600;
+        font-family: 'Avenir Next W1G';
+        font-size: 14px;
+    }
+    .work-with-us-container .client-name {
+        width: 100%;
+        float: left;
+        border-top: 1px solid #88bee1;
+        padding: 15px 0 0;
+        margin: 20px 0 0;
+        font-size: 14px;
+        font-family: 'Avenir Next W1G';
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+    .work-with-us-container .faq_ques h2 {
+        color: #3498db;
+        letter-spacing: 2.4px;
+        font-size: 24px;
+        border-bottom: 1px solid #989898;
+        padding-bottom: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Rockwell';
+        margin: 0;
+    }
+    .work-with-us-container .faq_ques {
+        width: 100%;
+        margin: 0;
+    }
+    .work-with-us-container .the_community {
+        margin: 50px auto;
+    }
+    .work-with-us-container .faq_ques h2:after {
+        display: none;
+    }
+    .work-with-us-container .work-with-us-container .faq_ques li {
+        margin: 20px 0 0;
+    }
+    .work-with-us-container .faq_ques li h5 {
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        color: #3493d2;
+        text-transform: uppercase;
+        font-family: 'Rockwell';
+        letter-spacing: .8px;
+        line-height: 20px;
+    }
+    .work-with-us-container .faq_ques li p {
+        text-align: center;
+        width: 100%;
+        font-family: 'Avenir Next W1G';
+        color: #2d2d2d;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 9px 0 0;
+        font-weight: 400;
+    }
+    .work-with-us-container .faq_ques li {
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        float: left;
+        margin: 20px 0 0;
+    }
+    .work-with-us-container .sign_up_btn {
+        background: #1f9bde;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        font-size: 14px;
+        display: inline-block;
+        letter-spacing: 2px;
+        font-family: 'Avenir Next W1G';
+        font-weight: normal;
+        color: #fff;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        margin: 30px 0;
+    }
+    .work-with-us-container .become_member label {
+        color: #1f9bde;
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 1.2px;
+        font-family: 'Avenir Next W1G';
+        font-weight: 500;
+        padding: 0 10px;
+    }
+    .work-with-us-container .become_member ul {
+        width: 100%;
+        float: left;
+        margin: 0px 0 10px;
+        list-style: none;
+    }
+    .work-with-us-container .become_member {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .work-with-us-container .bootstrap-select.btn-group span {
+
+    }
+    .work-with-us-container .become_member ul li input {
+        color: #565656;
+        font-size: 13px;
+        min-height: 39px;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        padding: 5px 12px;
+        letter-spacing: .6px;
+    }
+    .work-with-us-container .become_member button.dropdown-toggle {
+        -webkit-border-radius: 4px;
+        padding: 5px 12px;
+        letter-spacing: .6px;
+        font-size: 13px;
+    }
+    .work-with-us-container .become_member button.dropdown-toggle span {
+        font-size: 13px;
+    }
+    .work-with-us-container .become_member .dropdown-menu.inner li a {
+        font-size: 13px;
+    }
+    .work-with-us-container .become_member .dropdown-menu.inner li a span {
+        font-size: 13px;
+    }
+    .work-with-us-container .become_member .btn-group.bootstrap-select {
+        min-height: 39px;
+        height: 39px;
+    }
+    .work-with-us-container .become_member .btn-group.bootstrap-select button {
+        font-size: 13px;
+        min-height: 35px;
+        height: 35px;
+    }
+
+}

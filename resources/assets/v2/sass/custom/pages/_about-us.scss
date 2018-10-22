@@ -1,0 +1,290 @@
+.about-us {
+
+  .about__intro {
+    height: 530px;
+    background: url(/images/about-us/intro.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 60px 20px;
+
+    h1 {
+      @include font-family-rockwell;
+      @include font-size(34px);
+      @include font-upper;
+      @include font-spacing(0.2rem);
+      margin: 0 auto;
+      color: #fff;
+      max-width: 650px;
+      text-align: center;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    }
+  }
+
+  .section__text {
+    @include font-family-avenir;
+    @include font-size(14px);
+    color: #6e6e6e;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    @include font-family-rockwell;
+    @include font-size(34px);
+    @include font-spacing(0.2rem);
+    text-align: center;
+    color: $color-title-blue;
+    margin-bottom: 16px;
+  }
+
+  .about__story {
+    padding: 50px 15px 0;
+  }
+
+  .about__pillars {
+
+    padding: 80px 15px;
+
+    .pillars_item {
+      @include font-family-avenir;
+      @include font-size(12px);
+      color: #6e6e6e;
+      padding-top: 150px;
+      background-position: center top;
+      background-repeat: no-repeat;
+      margin-top: 30px;
+
+      &.reliability {  background-image: url(/images/about-us/icons/reliability.png);  }
+      &.technology {  background-image: url(/images/about-us/icons/technology.png);  }
+      &.creativity {  background-image: url(/images/about-us/icons/creativity.png);  }
+      &.philantropy {  background-image: url(/images/about-us/icons/philantropy.png);  }
+
+      h5 {
+        @include font-family-rockwell;
+        @include font-size(16px);
+        @include font-upper;
+        @include font-spacing(0.1rem);
+        color: $color-title-blue;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 12px;
+      }
+
+      .pillar__text {
+        padding: 0 20px;
+        text-align: justify;
+      }
+    }
+  }
+
+  .about__testimonials {
+    padding: 50px 15px;
+    background: #2b8ed0;
+    color: #fff;
+
+    h2 { color: #fff;  }
+
+    .testimonials {
+      position: relative;
+      max-width: 720px;
+      margin: 30px auto 0;
+
+      .testimonial__item {
+        text-align: center;
+
+        .testimonial__avatar {
+          width: 145px;
+          height: 145px;
+          border-radius: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin: 0 auto;
+        }
+
+        .testimonial__text {
+          @include font-size(14px);
+          margin: 30px 0;
+        }
+
+        .testimonial__name {  @include font-size(30px);  }
+
+        .testimonial__university {  @include font-size(16px);  }
+      }
+
+      .owl-nav {
+        position: absolute;
+        top: 48px;
+        width: 260px;
+        left: 50%; margin-left: -130px;
+
+        .owl-prev, .owl-next {
+          position: absolute;
+          top: 0;
+          font-size: 0;
+
+          &:after {
+            @include font-size(40px);
+            display: block;
+            font-family: 'FontAwesome';
+            -webkit-font-smoothing: antialiased;
+            color: #fff;
+            transition: all 0.3s;
+            line-height: normal;
+          }
+
+          &.disabled:after {  opacity: 0.5  }
+
+          &:hover:after { transform: scale(1.2); }
+        }
+
+        .owl-prev {
+          left: 0;
+          &:after {  content: '\f104';  }
+        }
+        .owl-next {
+          right: 0;
+          &:after {  content: '\f105';  }
+        }
+      }
+    }
+  }
+
+  .about__leaders {
+    padding: 80px 15px;
+
+
+    .section__text { margin-bottom: 20px;}
+
+    .leader {
+
+      text-align: center;
+      color: $color-title-blue;
+      margin-top: 50px;
+
+      .leader__avatar {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+      }
+
+      .leader__name {
+        @include font-size(16px);
+        font-weight: 500;
+        margin-top: 14px;
+      }
+
+      .leader__position {
+        @include font-size(12px);
+      }
+
+    }
+  }
+
+  .about__mission {
+    padding: 20px 15px;
+
+    .section__text {
+      max-width: 700px;
+      margin-top: 40px;
+      text-align: center;
+
+    }
+  }
+
+  .about__join {
+    padding: 80px 15px;
+
+    .hbspt-form {
+
+      max-width: 470px;
+      margin: 20px auto;
+
+
+      .hs-form-field {
+        margin-bottom: 20px;
+
+        label {
+          @include font-size(14px);
+          color: $color-title-blue;
+          margin-bottom: 3px;
+        }
+
+        .hs-input {
+          @include font-size(14px);
+          @include font-light;
+          width: 100%;
+          border: 1px solid $color-title-blue;
+          border-radius: 6px;
+          color: $color-title-blue;
+          padding: 10px 15px;
+          transition: all 0.2s;
+
+          &:focus {  outline: none;  }
+        }
+
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background: #fff url(/images/test/icons/icon-select.png) right 10px center no-repeat;
+        }
+
+      }
+
+      .hs-error-msgs {
+        margin: 6px 0 0;
+        padding: 0;
+        list-style: none;
+
+        label {
+          color: #d02b2b;
+          @include font-size(12px);
+        }
+      }
+
+      .hs_submit {
+        text-align: center;
+
+        input[type="submit"] {
+          @include font-size(14px);
+          display: inline-block;
+          border-radius: 6px;
+          transition: all 0.3s;
+          letter-spacing: 0.05rem;
+          background: #258bcf;
+          border: 1px solid #258bcf;
+          color: #fff;
+          text-transform: uppercase;
+          padding: 10px 30px;
+          cursor: pointer;
+
+          &:hover {
+            background: #fff;
+            color: #258bcf;
+          }
+
+          &:focus {  outline: none;  }
+
+        }
+
+      }
+
+      .submitted-message {
+        @include font-size(20px);
+        text-align: center;
+        color: $color-title-blue;
+        margin-top: 30px;
+      }
+
+    }
+
+  }
+
+
+
+
+}

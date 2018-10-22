@@ -1,0 +1,45 @@
+table.table {
+  thead th {
+    white-space: nowrap;
+    text-align: center;
+    border-bottom: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $gray-600;
+    border-top: 0;
+
+    a {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+  tbody {
+    font-size: $font-size-sm;
+
+    tr:first-child td {
+      border-top: 0;
+    }
+
+    td {
+      color: $gray-600;
+    }
+
+    a {
+      color: $gray-600;
+    }
+  }
+}
+
+.expand-tables {
+  position: absolute;
+  top: 91px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}

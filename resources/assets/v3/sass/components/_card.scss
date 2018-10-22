@@ -1,0 +1,27 @@
+.card-header {
+  background: transparent;
+}
+
+.card-header {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #279bd4;
+  position: relative;
+  padding: 16px 16px;
+  border-bottom: 2px solid #e1e7f0;
+}
+
+.card .list-group-item {
+  border: 0;
+  padding: 10px 16px;
+}
+
+.card .card-body, .card .list-group-item {
+
+}
+
+.card .card-body {
+  padding: 10px 10px;
+}

@@ -1,0 +1,76 @@
+.campaign__nav {
+
+  .block-info-rounded {
+    position: relative;
+
+    .block-info__body {
+      display: flex;
+      align-items: center;
+
+      @include media-breakpoint-down(xs) {  justify-content: space-between;  }
+
+      .body__item {
+        //display: inline-block;
+        padding: 24px 30px;
+
+        @include media-breakpoint-down(lg) { &.help { display: none;} }
+        @include media-breakpoint-down(md) { &.refer, &.store { display: none;} }
+        @include media-breakpoint-down(sm) { padding: 20px 15px; }
+        @media (max-width: 450px) {  padding: 10px 4px;  }
+
+
+        &.divider {
+          display: none;
+          @include font-size(16px);
+          @include media-breakpoint-down(xs) { display: block;  }
+        }
+
+        .item__title {
+          font-weight: 500;
+          transition: all 0.2s;
+          text-decoration: none;
+          white-space: nowrap;
+
+          @media (max-width: 400px) { @include font-size(11px); }
+
+          .fa {
+            @include font-size(22px);
+            color: $color-info-title-grey;
+            margin-right: 0;
+            vertical-align: middle;
+
+            &.fa-users, &.fa-file-image-o { @include font-size(20px); }
+
+            @include media-breakpoint-down(xs) { display: none; }
+          }
+
+          .tshirt-icon {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            vertical-align: middle;
+
+            @include media-breakpoint-down(xs) { display: none; }
+
+            path { fill: $color-info-title-grey;}
+          }
+
+          span {
+            vertical-align: middle;
+            margin-left: 6px;
+            white-space: nowrap;
+          }
+
+        }
+
+        &:hover, &.active {
+          .item__title {
+            color: $color-title-blue;
+            .fa {color: $color-title-blue;}
+            path { fill: #0575bf;}
+          }
+        }
+      }
+    }
+  }
+}

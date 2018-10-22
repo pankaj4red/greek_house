@@ -1,0 +1,48 @@
+html, body {
+ font-size: 14px;
+}
+
+.text-xl {
+  font-size: 1.5rem !important;
+}
+
+.text-lg {
+  font-size: 1.25rem !important;
+}
+
+.text-reg {
+  font-size: 1rem !important;
+}
+
+.text-sm {
+  font-size: 0.85rem !important;
+}
+
+.text-xs {
+  font-size: 0.7rem !important;
+  line-height: 0.7rem !important;
+}
+
+.color-slate {
+  color: #6c757d !important;
+}
+
+.color-black {
+  color: #212529 !important;
+}
+
+.color-blue {
+  color: #279bd4 !important;
+}
+
+.color-red {
+  color: #ff0000 !important;
+}
+
+.no-text {
+  font-size: 0;
+}
+
+.font-weight-semi-bold {
+  font-weight: 500;
+}

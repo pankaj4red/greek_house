@@ -1,0 +1,81 @@
+//TODO:sass
+
+.blog-container {
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+
+  .background-darkgray {
+    background: #e9ecf2;
+  }
+
+  .background-blue {
+    background: #3a99d8;
+    color: white;
+
+    .text-title {
+      color: white !important;
+    }
+
+    span {
+      color: white !important;
+    }
+
+    p {
+      color: white !important;
+    }
+  }
+
+  .blog-half {
+    float: left;
+    width: 50%;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+
+      & > * {
+        float: none;
+      }
+
+      & img {
+        float: none;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    div {
+      width: 100%;
+      float: left;
+      padding: 15px;
+      min-height: 179px;
+      text-align: justify;
+      overflow: hidden;
+
+      .text-title {
+        @include avenir-regular-medium;
+        border-bottom: 1px solid #cccccc;
+        margin: 0;
+      }
+
+      span {
+        @include avenir-small;
+        @include font-upper;
+      }
+
+      p {
+        @include avenir-small;
+      }
+    }
+
+    figure {
+      margin: 0;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

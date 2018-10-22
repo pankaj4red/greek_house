@@ -1,0 +1,36 @@
+
+@mixin font-light {
+  font-weight: 300;
+}
+
+@mixin font-thin {
+  font-weight: 200;
+}
+
+@mixin opacity-7 {
+  opacity: 0.7;
+}
+
+@mixin font-upper {
+  text-transform: uppercase;
+}
+
+@mixin font-medium {
+  font-weight: 500;
+}
+
+@mixin font-semi-bold {
+  font-weight: 600;
+}
+
+@mixin font-margin {
+  margin-bottom: 1rem;
+}
+
+@mixin font-double-margin {
+  margin-bottom: 2rem;
+}
+
+@mixin font-spacing($spacing: "normal") {
+  letter-spacing: $spacing;
+}

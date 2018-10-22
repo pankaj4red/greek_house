@@ -1,0 +1,272 @@
+
+$font-size-base: 13px;
+$font-size-base-lg: 13px;
+$font-size-base-md: 13px;
+$font-size-base-sm: 13px;
+$font-size-base-xs: 13px;
+
+$font-size-small: 0.8rem;
+$font-size-small-lg: 0.8rem;
+$font-size-small-md: 0.8rem;
+$font-size-small-sm: 0.8rem;
+$font-size-small-xs: 0.8rem;
+
+$font-size-regular: 1rem;
+$font-size-regular-lg: 1rem;
+$font-size-regular-md: 1rem;
+$font-size-regular-sm: 1rem;
+$font-size-regular-xs: 1rem;
+
+$font-size-medium: 1.3rem;
+$font-size-medium-lg: 1.2rem;
+$font-size-medium-md: 1.1rem;
+$font-size-medium-sm: 1.1rem;
+$font-size-medium-xs: 1.1rem;
+
+$font-size-large: 1.6rem;
+$font-size-large-lg: 1.4rem;
+$font-size-large-md: 1.2rem;
+$font-size-large-sm: 1.2rem;
+$font-size-large-xs: 1.2rem;
+
+$font-size-xsheader: 1.5rem;
+$font-size-xsheader-lg: 1.4rem;
+$font-size-xsheader-md: 1.3rem;
+$font-size-xsheader-sm: 1.2rem;
+$font-size-xsheader-xs: 1.2rem;
+
+$font-size-xxsheader: 1.2rem;
+$font-size-xxsheader-lg: 1.2rem;
+$font-size-xxsheader-md: 1.2rem;
+$font-size-xxsheader-sm: 1.1rem;
+$font-size-xxsheader-xs: 1.1rem;
+
+$font-size-sheader: 2rem;
+$font-size-sheader-lg: 1.7rem;
+$font-size-sheader-md: 1.5rem;
+$font-size-sheader-sm: 1.5rem;
+$font-size-sheader-xs: 1.5rem;
+
+$font-size-header: 1.85rem;
+$font-size-header-lg: 1.85rem;
+$font-size-header-md: 1.8rem;
+$font-size-header-sm: 1.6rem;
+$font-size-header-xs: 1.6rem;
+
+$font-size-lheader: 2.35rem;
+$font-size-lheader-lg: 2rem;
+$font-size-lheader-md: 1.8rem;
+$font-size-lheader-sm: 1.6rem;
+$font-size-lheader-xs: 1.6rem;
+
+$font-size-xlheader: 4.3rem;
+$font-size-xlheader-lg: 3.5rem;
+$font-size-xlheader-md: 2.5rem;
+$font-size-xlheader-sm: 2.2rem;
+$font-size-xlheader-xs: 2.2rem;
+
+@mixin font-size-base {
+  font-size: $font-size-base;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-base-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-base-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-base-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-base-xs;
+  }
+}
+
+@mixin font-size-small {
+  font-size: $font-size-small;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-small-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-small-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-small-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-small-xs;
+  }
+}
+
+@mixin font-size-regular {
+  font-size: $font-size-regular;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-regular-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-regular-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-regular-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-regular-xs;
+  }
+}
+
+@mixin font-size-medium {
+  font-size: $font-size-medium;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-medium-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-medium-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-medium-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-medium-xs;
+  }
+}
+
+@mixin font-size-large {
+  font-size: $font-size-large;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-large-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-large-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-large-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-large-xs;
+  }
+}
+
+@mixin font-size-header-xs {
+  font-size: $font-size-xsheader;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-xsheader-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-xsheader-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-xsheader-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-xsheader-xs;
+  }
+}
+
+@mixin font-size-header-xxs {
+  font-size: $font-size-xxsheader;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-xxsheader-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-xxsheader-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-xxsheader-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-xxsheader-xs;
+  }
+}
+
+@mixin font-size-sub-header {
+  font-size: $font-size-sheader;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-sheader-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-sheader-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-sheader-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-sheader-xs;
+  }
+}
+
+@mixin font-size-header {
+  font-size: $font-size-header;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-header-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-header-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-header-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-header-xs;
+  }
+}
+
+@mixin font-size-large-header {
+  font-size: $font-size-lheader;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-lheader-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-lheader-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-lheader-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-lheader-xs;
+  }
+}
+
+@mixin font-size-extra-large-header {
+  font-size: $font-size-xlheader;
+
+  @include media-breakpoint-down(lg) {
+    font-size: $font-size-xlheader-lg;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-xlheader-md;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-xlheader-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-xlheader-xs;
+  }
+}
+
+//font size - rem. @include font-size(14px)
+@function calculateRem($size) {
+  $remSize: $size / $font-size-base;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+.text-reg {
+  font-size: 1.1rem !important;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}

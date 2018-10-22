@@ -1,0 +1,96 @@
+
+html {
+  height: 100%;
+  position: relative;
+  @include font-family-avenir;
+  @include font-size-base;
+}
+
+body {
+  @include font-family-avenir;
+  @include font-size-base;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 45px;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 150px;
+  }
+}
+
+a {
+  @include font-family-avenir;
+  font-size: inherit;
+  color: $color-title-blue;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $color-title-blue;
+    text-decoration: underline;
+  }
+}
+
+.countdown-block {
+  display: flex;
+  justify-content: space-between;
+
+  .countdown__item {
+    @include font-size(18px);
+    width: calc(25% - 10px);
+    border: 1px solid $color-grey;
+    color: #bdbdbd;
+    border-radius: 4px;
+    padding: 16px 10px 12px;
+    text-align: center;
+
+    @include media-breakpoint-down(xs) {
+      @include font-size(12px);
+    }
+
+    .item__numbers {
+      @include font-size(46px);
+      font-weight: 700;
+      line-height: 1;
+      color: #9c9c9c;
+
+      @include media-breakpoint-down(xs) {
+        @include font-size(36px);
+      }
+
+    }
+  }
+}
+
+//show spin loading
+#overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255,255,255,0.5);
+  z-index: 100;
+
+  .loading-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+    background: #fff;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+
+    &:after {
+      display: inline-block;
+      content: '\f1ce';
+      font-family: 'FontAwesome';
+      font-size: 30px;
+      animation: fa-spin 2s infinite linear;
+      color: $color-title-blue;
+      margin-top: 6px;
+    }
+
+  }
+}

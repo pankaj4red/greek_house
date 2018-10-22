@@ -1,0 +1,51 @@
+.gallery {
+  @extend .mt-4;
+  @extend .mb-5;
+
+  &.gallery-small {
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+
+    a {
+      min-height: initial;
+    }
+
+    .gallery-caption {
+      display: none;
+    }
+  }
+
+  .gallery-row {
+    @extend .mb-4;
+
+    .gallery-item {
+      width: 25%;
+      float: left;
+      display: inline-block;
+      padding: 0 15px;
+      margin-bottom: 30px;
+
+      @include media-breakpoint-down(sm) {
+        width: 50%;
+      }
+
+      .gallery-item-inner {
+        border: 1px solid #dcdcdc;
+        text-align: center;
+
+        a {
+          background: #f8f8f8 none repeat scroll 0 0;
+          display: inline-block;
+          box-shadow: 2px 2px 4px #e7e7e7;
+          position: relative;
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.store.landing {
+
+  .chapters {
+
+    padding: 68px 0;
+
+    .chapters__search {
+      text-align: center;
+
+      .search__input {
+
+        input[type="text"] {
+          @include font-size(18px);
+          width: 100%;
+          max-width: 600px;
+          background: #f2f2f2 url(/images/store/icons/search.png) center left 70px no-repeat;
+          color: $color-info-title-grey;
+          border: 2px solid #c9c9c9;
+          border-radius: 4px;
+          padding: 12px 80px 12px 110px;
+          margin-bottom: 30px;
+
+          &:focus {  outline: none;  }
+
+          @include media-breakpoint-down(sm) {
+            padding: 12px 10px 12px 48px;
+            background-position: center left 10px;
+          }
+
+        }
+      }
+    }
+
+    .chapters__tabs {
+
+      margin-top: 34px;
+
+      .nav-tabs {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        background: $color-title-blue;
+        border: 0;
+        border-radius: 4px;
+
+        .nav-item {
+
+          &:after { display: none;}
+
+          //@include chapter-tabs;
+          &:first-of-type {
+            &.active ~ .slide {  left: 4px;  }
+          }
+          &:nth-of-type(2) {
+            &.active ~ .slide {  left: calc(((100% / 3)));  }
+          }
+          &:last-of-type {
+            &.active ~ .slide {  left: calc(((100% / 3) * 2) - 3px); }
+          }
+
+          .nav-link {
+            position: relative;
+            @include font-family-rockwell;
+            color: #fff;
+            letter-spacing: 4px;
+            z-index: 2;
+
+            &:after, &:before {
+              display: none;
+            }
+
+            &.active {  background: inherit;  }
+
+            .mobile-only {
+              @include font-size(26px);
+              color: #fff;
+            }
+
+          }
+        }
+
+        .slide {
+          background: #29b3ff;
+          width: calc(100% / 3);
+          position: absolute;
+          left: 0;
+          top: 4px; bottom: 4px;
+          border-radius: 4px;
+          transition: left 0.1s ease-out;
+          z-index: 1;
+        }
+
+      }
+
+      .tab-content {
+
+        padding: 0;
+        margin-top: 60px;
+
+        .chapter__item {
+          display: block;
+          padding: 80px 38px;
+          margin-bottom: 24px;
+          background: $color-bg-light-grey2;
+          color: #969696;
+          text-decoration: none;
+          transition: all 0.3s;
+
+          .item__title {
+            border-top: 4px solid #969696;
+            border-bottom: 4px solid #969696;
+            text-align: center;
+            font-size: 48px;
+            font-family: "Times New Roman", Times, serif;
+          }
+
+          &:hover {
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+            color: #818181;
+          }
+
+          @include media-breakpoint-down(md) {
+            padding: 60px 28px;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+
+//$num-of-chapter-tabs: 3;
+//@mixin chapter-tabs {
+//  @for $i from 1 through $num-of-chapter-tabs {
+//    &:nth-of-type(#{$i}) {
+//      &.active {
+//        ~ .slide {
+//          @if $i == $num-of-chapter-tabs {
+//            left: calc(((100% / #{$num-of-chapter-tabs}) * #{$i - 1}) - 4px);
+//          } @else {
+//            left: calc((100% / #{$num-of-chapter-tabs}) * #{$i - 1});
+//          }
+//        }
+//      }
+//    }
+//  }
+//}

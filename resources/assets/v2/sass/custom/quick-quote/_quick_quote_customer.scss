@@ -1,0 +1,133 @@
+
+.quick-quote-popup {
+  position: fixed;
+  right: -285px;
+  top: 15%;
+  width: 285px;
+  transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  z-index: 1000;
+  margin: 0;
+}
+
+.quick-quote-popup.show {
+  right: 0px;
+}
+
+.quick-quote {
+  background: #f9f9f9 none repeat scroll 0 0;
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+.quick-quote-button {
+  background: #333333 none repeat scroll 0 0;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 4px 0 0 4px;
+  left: -42px;
+  padding: 7px 6px;
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+
+.quick-quote-button:hover {
+  background: #3498db;
+  border-color: #3498db;
+}
+
+.quick-quote-button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.quick-quote-popup h1 {
+  background: #3498db none repeat scroll 0 0;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.form-row {
+  float: left;
+  padding: 5px 15px;
+  width: 100%;
+}
+
+.form-row .btn-group.bootstrap-select {
+  width: 100% !important;
+}
+
+.half-select {
+  width: 48%;
+}
+
+.half-select + .half-select {
+  margin-right: 4%;
+}
+
+.cost-detail ul {
+  border: 1px solid #dedede;
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.cost-detail ul li {
+  background: #fffff5 none repeat scroll 0 0;
+  border-bottom: 1px solid #dedede;
+  color: #000000;
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.cost-detail ul li span, .cost-detail ul li div {
+  width: 49%;
+  text-align: left;
+}
+
+.green-text {
+  color: #65ba52 !important;
+}
+
+.iradio.checked {
+  background-position: 0 0;
+}
+
+.iradio {
+  float: left;
+  display: inline-block;
+  display: inline;
+  vertical-align: middle;
+  margin-right: 7px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(/images/radio-icheck.png) no-repeat;
+  background-position: 0 -44px;
+  border: none;
+  cursor: pointer;
+}
+
+.male-select, .female-select {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.male-select {
+  margin-right: 70px;
+}
+
+.male-select .radio-label, .female-select .radio-label {
+  margin-left: 10px;
+  width: auto;
+}

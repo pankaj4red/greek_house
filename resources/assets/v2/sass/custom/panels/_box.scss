@@ -1,0 +1,33 @@
+//TODO:sass
+.panel-box {
+  border: 0;
+  box-shadow: none;
+  margin-bottom: 20px;
+
+  .panel-heading {
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    padding: 0;
+
+    .panel-title {
+      float: left;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .panel-body {
+    padding: 18px 15px;
+    background: #f8f8f8;
+    border: 1px solid #d6d6d6;
+  }
+}

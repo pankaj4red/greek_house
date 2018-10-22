@@ -1,0 +1,210 @@
+//TODO:sass
+$navbar-padding: 15px 0 7px 0;
+
+#gh-header {
+  border-bottom: 1px solid $color-grey;
+  margin-bottom: 2rem;
+
+  .navbar {
+    margin-bottom: 0;
+    border-color: transparent;
+    background: $color-white;
+    padding: $navbar-padding;
+
+    .navbar-brand {
+      padding: 0;
+      display: block;
+
+      .logo {
+        width: 48px;
+        height: 48px;
+        display: inline;
+        position: relative;
+        top: -4px;
+        float: left;
+      }
+
+      span {
+        @include rockwell-standard-header;
+        @include font-spacing(-0.8px);
+        padding: 7px 0 0 13px;
+        display: inline-block;
+      }
+    }
+    .nav-item {
+      .nav-link {
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+        @include avenir-minor-header-deselected;
+
+        &:hover, &:active, &:focus {
+          @include avenir-minor-header-selected;
+          outline: 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+          padding: 1.3rem 0.5rem 0.8rem 0.5rem;
+        }
+
+        &:after {
+          content: attr(title);
+          display:block;
+          @include avenir-minor-header-selected;
+          height:1px;
+          color:transparent;
+          overflow:hidden;
+          visibility:hidden;
+        }
+
+        &:hover, &:focus {
+          @include avenir-minor-header-selected;
+          outline: 0;
+        }
+
+      }
+
+      /* @todo delete - why here?? */
+      /*.btn-green-transparent {
+        @include font-upper;
+        margin-top: 0.6rem;
+      }*/
+
+      &.active {
+        .nav-link {
+          @include avenir-minor-header-selected;
+          outline: 0;
+        }
+      }
+
+
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.navbar-user-entry {
+  padding: 8px 0 7px 0;
+
+  img {
+    border-radius: 30px;
+    height: 38px;
+    margin-right: 10px;
+    width: 38px;
+    float: left;
+  }
+
+  .navbar-user-information {
+    padding-top: 2px;
+    float: left;
+
+    p {
+      color: #777;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 2px 0 0 0;
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    form {
+      line-height: 1;
+
+      .btn-logout {
+        background: none !important;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+        cursor: pointer;
+        outline: none;
+        color: #3498db;
+        font-size: 14px;
+      }
+
+      &:hover, &:active, &:focus {
+        color: #2a6496;
+        box-shadow: none;
+        outline: 0;
+      }
+    }
+  }
+}
+
+.navbar-cart{
+  margin-top: -6px;
+  img {
+    width: 25px;
+  }
+  .navbar-cart-counter{
+    border: 1px solid #6ac800;
+    background-color: #6ac800;
+    border-radius: 10px;
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    width: 10px;
+    height: 10px;
+    line-height: 7px;
+    padding: 1px 2px;
+    position: relative;
+    top: 6px;
+    left: 2px;
+  }
+}
+
+header .dropdown-item:hover,
+header .dropdown-item:focus {
+  color: #FFF;
+  text-decoration: none;
+  background-color: #00a4d8;
+}
+header .dropdown-item{ padding: 0.85rem 1.5rem}
+header .dropdown-menu { padding: 0px;
+  border-radius: 0px;
+}
+
+@media screen and (min-width: 992px){
+  header  .dropdown-toggle:after {
+    margin-left: 10px;
+  }
+  header .dropdown-menu { padding: 0px;
+    top:48px;
+  }
+
+
+}
+@media only screen and (max-width: 767px) {
+  header .dropdown-menu { width: 55%}
+  header .dropdown-item:hover,
+  header .dropdown-item:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #00a4d8;
+  }
+  header .dropdown-item{ padding: 0.85rem 0.7rem}
+}
+
+#gh-header .navbar .nav-item.dropdown .dropdown-toggle:after {
+  display: inline-block !important;
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  font-family: "Avenir Next W1G", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #313131;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  visibility: initial;
+}
+

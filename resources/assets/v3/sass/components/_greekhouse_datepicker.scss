@@ -1,0 +1,101 @@
+.greekhouse-datepicker {
+
+  &.ui-widget.ui-widget-content {
+    border: 0;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  &.ui-datepicker {
+    padding: 0;
+    border-radius: 0;
+
+    .ui-datepicker-header {
+      background: #f0f0f0;
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      height: 50px;
+
+      .ui-datepicker-title {
+        font-size: $font-size-base;
+        font-weight: 600;
+        line-height: 50px;
+      }
+
+      .ui-datepicker-prev, .ui-datepicker-next {
+
+        top: 0;
+        width: auto;
+        height: auto;
+        cursor: pointer;
+
+        span {
+          display: none;
+        }
+
+        &:hover {
+          border: 0;
+          background: inherit;
+
+        }
+
+        &:after {
+          font-family: 'FontAwesome';
+          font-size: $font-size-lg;
+          color: #3498db;
+          line-height: 50px;
+        }
+      }
+
+      .ui-datepicker-prev {
+        left: 20px;
+        &:after {
+          content: '\f104';
+        }
+      }
+      .ui-datepicker-next {
+        right: 20px;
+        &:after {
+          content: '\f105';
+        }
+      }
+    }
+
+    table.ui-datepicker-calendar {
+      margin: 0;
+      border: 1px solid #ecedee;
+
+      th {
+        padding: 12px 8px;
+        background: #f9f9f9;
+        color: #bebfc1;
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      td {
+        padding: 0;
+        border: 1px solid #ecedee;
+
+        a.ui-state-default {
+          padding: 12px 10px;
+          text-align: center;
+          color: #2f3542;
+          font-size: $font-size-sm;
+          background: #fff;
+          font-weight: 600;
+          line-height: 1;
+          border: 0;
+
+          &.ui-state-active {
+            background: #3498db;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

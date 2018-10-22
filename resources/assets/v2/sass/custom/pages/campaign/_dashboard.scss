@@ -1,0 +1,393 @@
+.dashboard {
+  .block-dashboard {
+    .nav-title {
+      @include avenir-blue-title;
+    }
+
+    .nav-tabs {
+      flex-wrap: wrap;
+      border-top: none;
+      border-bottom: 1px solid #e1e7f0;
+
+      .nav-item {
+        position: relative;
+        flex: 0 0 auto;
+        text-align: left;
+        margin-bottom: 0;
+        margin-right: 10px;
+
+        &:after {  display: none;  }
+        &:last-child { margin-right: 0; }
+
+        @include media-breakpoint-down(xs) {  margin-right: 20px;  }
+
+        .nav-link {
+          @include avenir-blue-title;
+          @include font-spacing(0rem);
+          color: $color-info-title-grey;
+          position: relative;
+          border: none;
+          padding: 14px 4px;
+          font-size: 1rem;
+          border-bottom: 3px solid transparent;
+
+          @include media-breakpoint-down(xs) {  font-size: inherit;  }
+
+          &:hover, &.active {
+
+            color: $color-title-blue;
+            border-bottom: 3px solid $color-title-blue;
+
+            &:before, &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .campaign__table {
+
+      th,td {
+        text-align: center;
+      }
+
+      td {
+        border-bottom: 1px solid #e1e7f0;
+        padding: 14px 30px;
+
+        a {
+          color: #515974;
+
+          &:hover, &:focus, &:active {
+            color: #888888;
+            text-decoration: none;
+          }
+        }
+      }
+
+      th {
+        border-bottom: none;
+        padding: 20px 30px;
+      }
+
+      td:nth-child(3), td:nth-child(4) { text-transform: uppercase; }
+
+      td:nth-child(3) {
+        line-height: normal;
+
+        div:nth-child(2) {
+          @include font-size(10px);
+        }
+      }
+
+      .campaign__number {
+        @include campaign-badge;
+        display: inline-block;
+        padding: 8px 14px;
+
+        &:hover, &:active, &:focus {
+          color: #fff;
+          outline: 0;
+          text-decoration: none;
+        }
+      }
+
+      .campaign__action {
+        @include font-size(20px);
+        color: #484848;
+        margin: 0 6px;
+
+        &:hover {
+          color: $color-title-blue;
+          text-decoration: none;
+        }
+
+      }
+    }
+  }
+
+  .block-campaign-links {
+
+    //@include media-breakpoint-down(xs) {  text-align: center;  }
+
+    .campaign__link {
+      @include font-size(12px);
+      display: inline-block;
+      width: 180px; height: 180px;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      padding-top: 120px;
+      border: 1px solid #e1e7f0;
+      border-radius: 4px;
+      background-position: center 50px;
+      background-repeat: no-repeat;
+      color: #43484d;
+      text-align: center;
+
+      &:last-child { margin-right: 0;}
+
+      &.friend {  background-image: url(/images/test/icons/icon-friends.png);  }
+      &.store {  background-image: url(/images/test/icons/icon-store.png);  }
+      &.gallery {  background-image: url(/images/test/icons/icon-gallery.png);  }
+      &.help {  background-image: url(/images/test/icons/icon-help.png);  }
+
+      &:hover {
+        text-decoration: none;
+        border-color: #7fbee8;
+        box-shadow: 0 0 10px 0 rgba(127,190,232,0.5) ;
+      }
+
+      @include media-breakpoint-down(xs) {
+        display: block;
+        margin-right: auto !important;
+        margin-left: auto !important;
+      }
+
+    }
+
+  }
+
+
+  .tooltip {
+    .tooltip-inner {
+      @include font-size(10px);
+      text-transform: uppercase;
+      max-width: 150px;
+    }
+  }
+}
+
+
+
+
+.tag-date {
+  padding-left: 20px;
+  position: relative;
+}
+
+.tag-date:before {
+  margin-top: -17px;
+  content: url(/images/clocksmall.png);
+  left: 0;
+  position: absolute;
+  top: 18px;
+}
+
+.tag-state {
+  font-weight: normal;
+  padding-left: 30px;
+  text-decoration: none;
+  line-height: 21px;
+  height: 21px;
+  display: inline-block;
+}
+
+.tag-state:hover, .tag-state:active, .tag-state:focus {
+  text-decoration: none;
+}
+
+.tag-state.state_campus_approval {
+  background: transparent url(/images/icon-watch.png) no-repeat;
+}
+
+.tag-state.state_awaiting_design {
+  background: transparent url(/images/icon-watch-blue.png) no-repeat;
+}
+
+.tag-state.state_on_hold {
+  background: transparent url(/images/icon-watch-blue.png) no-repeat;
+}
+
+.tag-state.state_awaiting_approval {
+  background: transparent url(/images/icon-watch.png) no-repeat;
+}
+
+.tag-state.state_revision_requested {
+  background: transparent url(/images/icon-watch-blue.png) no-repeat;
+}
+
+.tag-state.state_awaiting_quote {
+  background: transparent url(/images/icon-comma.png) no-repeat;
+}
+
+.tag-state.state_collecting_payment {
+  background: transparent url(/images/icon-dollar.png) no-repeat;
+}
+
+.tag-state.state_processing_payment {
+  background: transparent url(/images/icon-dollar.png) no-repeat;
+}
+
+.tag-state.state_fulfillment_ready {
+  background: transparent url(/images/icon-direction.png) no-repeat;
+}
+
+.tag-state.state_fulfillment_artwork {
+  background: transparent url(/images/icon-direction.png) no-repeat;
+}
+
+.tag-state.state_fulfillment_validation {
+  background: transparent url(/images/icon-direction.png) no-repeat;
+}
+
+.tag-state.state_fulfillment_garment {
+  background: transparent url(/images/icon-direction.png) no-repeat;
+}
+
+.tag-state.state_printing {
+  background: transparent url(/images/icon-direction.png) no-repeat;
+}
+
+.tag-state.state_shipped {
+  background: transparent url(/images/icon-direction.png) no-repeat;
+}
+
+.tag-state.state_delivered {
+  background: transparent url(/images/icon-direction.png) no-repeat;
+}
+
+.tag-state.state_cancelled {
+  background: transparent url(/images/icon-cross.png) no-repeat;
+}
+
+.action-required {
+  color: red;
+}
+
+.tag-views {
+  font-weight: normal;
+  padding-left: 30px;
+  text-decoration: none;
+  line-height: 21px;
+  height: 21px;
+  display: inline-block;
+  background: transparent url(/images/icon-eye.png) no-repeat;
+  background-position: center left;
+}
+
+.tag-delivery-date {
+  padding-left: 28px;
+  position: relative;
+}
+
+.tag-delivery-date:before {
+  margin-top: -17px;
+  content: url(/images/icon-direction.png);
+  left: 0;
+  position: absolute;
+  top: 18px;
+}
+
+.tag-action {
+  padding: 3px 0 3px 23px;
+  position: relative;
+  background-position: left center !important;
+}
+
+.tag-action:hover, .tag-action:active, .tag-action:focus {
+  text-decoration: none;
+}
+
+.tag-action.tag-action-grab {
+  display: inline-block;
+  background: transparent url(/images/grab-icon.png) no-repeat;
+}
+
+.tag-action.tag-action-reject {
+  display: inline-block;
+  background: transparent url(/images/icon-cross.png) no-repeat;
+}
+
+.tag-action.tag-action-upload-designs {
+  background: transparent url(/images/grab-icon.png) no-repeat;
+}
+
+.tag-action.tag-action-upload-prints {
+  background: transparent url(/images/grab-icon.png) no-repeat;
+}
+
+.tag-action.tag-action-quote {
+  background: transparent url(/images/grab-icon.png) no-repeat;
+}
+
+.tag-action.tag-action-approve {
+  background: transparent url(/images/grab-icon.png) no-repeat;
+}
+
+.tag-user {
+  padding-left: 28px;
+  position: relative;
+  line-height: 21px;
+  height: 21px;
+  display: inline-block;
+}
+
+.tag-user.user_customer {
+  background: transparent url(/images/icon-user-red.png) no-repeat;
+}
+
+.tag-user.user_sales_rep {
+  background: transparent url(/images/icon-user-red.png) no-repeat;
+}
+
+.tag-user.user_manager {
+  background: transparent url(/images/icon-user-manager.png) no-repeat;
+}
+
+.tag-user.user_fulfillment {
+  background: transparent url(/images/icon-user-manager.png) no-repeat;
+}
+
+.tag-user.user_decorator {
+  background: transparent url(/images/icon-user-manager.png) no-repeat;
+}
+
+.tag-user.user_designer {
+  background: transparent url(/images/icon-user-manager.png) no-repeat;
+}
+
+.tag-user.user_admin {
+  background: transparent url(/images/icon-user-manager.png) no-repeat;
+}
+
+.tag-user.user_account_manager {
+  background: transparent url(/images/icon-user-manager.png) no-repeat;
+}
+
+.tag-user.user_none {
+  padding-left: 0;
+}
+
+.expand-tables {
+  position: absolute;
+  top: 91px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+.campaign__table-filters {
+  margin-top: 2rem;
+}
+
+.campaign__table-filter-entry {
+  display: inline-block;
+  margin-left: 10px;
+  width: 150px;
+}
+
+.campaign__table-filter-title, .table-filter-action {
+  display: inline-block;
+}
+
+.modal-reject {
+  .modal-content, .modal-header {
+    display: block;
+    text-align: left;
+  }
+}

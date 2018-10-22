@@ -1,0 +1,20 @@
+
+// Global Variables
+@import '../../../../node_modules/bootstrap/scss/functions', '../../../../node_modules/bootstrap/scss/variables';
+
+// External Libraries
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import "vendor/fontawesome.css";
+
+// Theme
+@import "vendor/sb-admin.min.css";
+
+// Plugins
+@import "vendor/metisMenu.min.css";
+@import "vendor/jquery-ui.min";
+
+// Theme Components
+@import "components/filepicker";
+@import "components/sidebar";
+@import "components/text";
+@import "components/carousel";

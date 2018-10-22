@@ -1,0 +1,23 @@
+.image-background {
+  background: no-repeat center top;
+  background-size: cover;
+}
+
+.image-hover-effect {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &:hover {
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+.image-effect {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.image-background-drawn-world {
+  background-image: url(/images/campus-manager/reward_bg.jpg);
+}

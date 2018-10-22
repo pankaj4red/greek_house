@@ -1,0 +1,9 @@
+.collapse-icon {
+  transform: none;
+}
+
+a.collapsed {
+  & > .collapse-icon {
+    transform: rotate(180deg);
+  }
+}

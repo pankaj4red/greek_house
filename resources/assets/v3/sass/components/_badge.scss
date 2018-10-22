@@ -1,0 +1,44 @@
+.badge-file {
+  background: #e2eef7 none repeat scroll 0 0;
+  padding: 8px 15px;
+  border-radius: 40px;
+  width: 170px;
+  text-align: left;
+  line-height: 1.2;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+
+  a {
+    color: #000000;
+    display: block;
+    font-size: $font-size-xs;
+    width: 120px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    color: #676767;
+    font-size: $font-size-xs;
+    font-style: italic;
+    margin: 0;
+  }
+
+  button {
+    background: rgba(0, 0, 0, 0) url("/images/icon-delete.png") no-repeat scroll 0 0;
+    height: 14px;
+    margin-top: -7px;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    width: 14px;
+    border: 0;
+    cursor: pointer;
+  }
+}

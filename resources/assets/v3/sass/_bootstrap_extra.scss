@@ -1,0 +1,50 @@
+.btn.btn-caps {
+  text-transform: uppercase;
+}
+
+.btn.btn-hover-info {
+  &:hover, &:active, &:focus, &.active {
+    color: $white !important;
+    background-color: $ui-primary !important;
+  }
+}
+
+[v-cloak] .v-cloak--hidden{
+  display: none;
+}
+
+
+.bg-lighter {
+  background-color: $lighter;
+}
+
+.font-lg {
+  font-size: $font-size-lg;
+  letter-spacing: .75px;
+}
+
+.font-weight-semi-bold {
+  font-weight: $font-weight-semi-bold;
+}
+
+.letter-space-1 {
+  letter-spacing: 0.08rem;
+}
+
+.text-no-underline {
+  text-decoration: none;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
+.text-hover-primary-darker {
+  &:hover, &:active, &:focus {
+    color: $ui-primary-darker;
+  }
+}
+
+[v-cloak] {
+  display: none;
+}

@@ -1,0 +1,63 @@
+.quantity-counter {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+
+  .quantity-counter-minus {
+    font-size: 1.2rem;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    color: #6c757d;
+    opacity: 0.5;
+    bottom: 0;
+    width: 55px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 43px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .quantity-counter-quantity {
+    width: 135px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+    color: #515974;
+    padding: 11px 28px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  .quantity-counter-plus {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 600;
+    color: $gray-600;
+    opacity: 0.5;
+    bottom: 0;
+    width: 55px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

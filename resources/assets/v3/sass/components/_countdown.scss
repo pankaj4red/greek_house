@@ -1,0 +1,29 @@
+#countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  .countdown-item {
+    font-size: 1rem;
+    width: calc(25% - 10px);
+    border: 1px solid #e5e5e5;
+    color: #bdbdbd;
+    border-radius: 4px;
+    padding: 16px 10px 12px;
+    text-align: center;
+
+    .countdown-item-value {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1;
+      color: #9c9c9c;
+    }
+
+    .countdown-item-key {
+
+    }
+  }
+}

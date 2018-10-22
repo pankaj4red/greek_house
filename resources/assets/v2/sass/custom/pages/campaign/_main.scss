@@ -1,0 +1,546 @@
+
+.campaign__description {
+
+  .description__header {
+    padding: 25px $padding-big-block-lr 0;
+
+    @include media-breakpoint-down(xs) {
+      padding: 25px $padding-block-lr 0;
+    }
+
+    .header__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 35px;
+
+      @include media-breakpoint-down(xs) {
+        margin-bottom: 20px;
+      }
+
+      .item__title {
+        @include avenir-grey-title;
+      }
+
+      .item__value {
+        @include font-spacing(0.1rem);
+        @include font-size(18px);
+        margin-top: 20px;
+        color: $color-title-blue;
+        line-height: 1.3;
+
+        @include media-breakpoint-down(xs) {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+
+  .description__body {
+
+    color: $color-info-title-grey;
+
+    .body__subtitle {
+      @include campaign-subtitle;
+    }
+
+    .body__info {
+      @include font-size(14px);
+      padding: 20px $padding-big-block-lr;
+
+      @include media-breakpoint-down(xs) {
+        padding: 20px $padding-block-lr;
+      }
+
+      p {
+        margin: 0 0 20px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      &.references {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 0;
+
+        .reference__item {
+          margin-bottom: 30px;
+          width: 30%;
+          padding-top: 30%;
+          border-radius: 6px;
+          border: 1px solid #cecece;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &.fix-flex-lastchild {
+            height: 0;
+            padding-top: 0;
+            box-shadow: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.campaign__table-wrapper {
+
+  overflow-x: auto;
+
+  .campaign__table {
+    width: 100%;
+
+    @include media-breakpoint-down(sm) {
+    }
+
+    th {
+      @include avenir-grey-title;
+      padding: 20px 30px;
+      border-bottom: 1px solid #e1e7f0;
+
+      @include media-breakpoint-down(sm) {
+        @include font-size(12px);
+        padding: 10px 20px;
+      }
+
+    }
+
+    td {
+      @include font-size(14px);
+      padding: 30px;
+      color: $color-info-value-grey;
+
+      @include media-breakpoint-down(sm) {
+        padding: 20px;
+      }
+
+    }
+  }
+
+}
+
+.block-payment-details {
+
+  .block-info__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .campaign-btn {
+    @include font-size(14px);
+    padding: 13px 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .payment__buy-now {
+
+    margin-bottom: 20px;
+
+    .campaign-btn {
+      @include campaign-btn-buy;
+    }
+
+    .payment__price-range {
+      @include font-size(16px);
+      text-transform: uppercase;
+      color: #343434;
+      text-align: right;
+
+      .price {
+        color: $color-title-blue;
+      }
+    }
+  }
+
+  .payment__share-campaign {
+    display: flex;
+    margin-bottom: 0px;
+
+    label {
+      @include font-size(12px);
+      text-transform: uppercase;
+      margin: auto 15px auto 0;
+      white-space: nowrap;
+    }
+
+    .share__url {
+      @include font-size(12px);
+      position: relative;
+      flex: 1;
+      color: #bdbdbd;
+      border: 1px solid #bdbdbd;
+      border-right: 0;
+      border-radius: 6px 0 0 6px;
+      padding: 5px 0 5px 10px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .share__btn {
+      @include font-size(10px);
+      text-transform: uppercase;
+      color: #fff;
+      background: #7d7d7d;
+      border-radius: 0 6px 6px 0;
+      padding: 0 20px;
+      line-height: 30px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.3s;
+
+      &:hover {
+        background: $color-info-title-grey;
+      }
+    }
+  }
+
+  .payment__sizes {
+    display: flex;
+    padding: 20px 0 10px 0;
+
+    .payment__size {
+      @include font-size(14px);
+      color: #929292;
+      font-weight: 500;
+      text-align: center;
+      flex: 1 1;
+      padding: 0 10px;
+      border-right: 1px solid #e6e6e6;
+
+      &:last-child {
+        align-self: center;
+        border-right: 0;
+      }
+
+      .size__qty {
+        color: #43484d;
+      }
+
+      &.total .size__qty {
+        color: $color-title-blue;
+      }
+
+      &.view-orders {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: normal;
+        cursor: pointer;
+
+        i {
+          color: $color-title-blue;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .payment__close-date {
+    margin-top: 10px;
+    display: flex;
+    color: #5e5e5e;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+
+    .close__days-left {
+      @include font-size(16px);
+
+      i {
+        @include font-size(20px);
+      }
+    }
+
+    .close__date {
+      @include font-size(12px);
+      line-height: normal;
+
+      label {
+        @include font-size(8px);
+        margin: 0;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .payment__status {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    label {
+      @include font-size(12px);
+      @include font-semi-bold;
+      color: $color-info-title-grey;
+      margin: 0 12px 0 0;
+
+      @include media-breakpoint-down(xs) {
+        div {
+          display: inline-block;
+          margin-bottom: 6px;
+        }
+      }
+
+    }
+
+    .status__tracking-numbers {
+      @include font-size(10px);
+      color: #959595;
+      text-transform: uppercase;
+      line-height: normal;
+      padding: 4px 34px;
+      border: 1px solid #c0c0c0;
+      border-radius: 6px;
+    }
+
+    .status__info {
+      @include font-size(10px);
+      color: #6e6e6e;
+      margin: 0 20px;
+      width: 25%;
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        margin-top: 10px;
+        order: 5;
+        text-align: center;
+
+      }
+
+      @include media-breakpoint-down(sm) {
+        order: inherit;
+      }
+
+    }
+
+    .status__cancelled {
+      @include font-size(12px);
+      text-transform: uppercase;
+      color: #6e6e6e;
+
+      span {
+        margin-right: 4px;
+      }
+
+      .cancelled__date {
+        @include font-size(16px);
+        font-weight: 500;
+        margin-top: 0;
+      }
+
+    }
+
+    .status__btn {
+      flex-grow: 1;
+      text-align: right;
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .campaign-btn {
+        padding: 13px 40px;
+      }
+    }
+
+  }
+}
+
+.block-campaign-stats {
+
+  .block-info__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .stats__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+    }
+
+    .stat__block {
+      display: flex;
+      align-items: center;
+      padding: 4px 26px;
+      border: 1px solid #6b6e72;
+      border-radius: 6px;
+      margin-bottom: 28px;
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .stat__title {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #838282;
+        margin-right: 10px;
+      }
+
+      .stat__value {
+        font-size: 3rem;
+        color: $color-title-blue;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .stat__tip {
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          text-align: center;
+        }
+
+        @include font-size(14px);
+        color: #797979;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .stats__progress {
+    @include progress-bar;
+    background: #dcdfe4;
+    margin: 0 0 40px;
+    height: 16px;
+
+    .progress__success {
+      border-radius: 4px;
+    }
+
+    .progress__point {
+      position: absolute;
+      top: -7px;
+
+      .point__dash {
+        display: inline-block;
+        width: 10px;
+        height: 30px;
+        background: $color-title-blue;
+        //margin-bottom: 5px;
+        border-radius: 3px;
+      }
+
+      .point__title {
+        @include font-size(14px);
+        text-transform: uppercase;
+        color: $color-title-blue;
+
+        @include media-breakpoint-down(xs) {
+          font-size: 0;
+          &:after {
+            content: attr(data-mob);
+            @include font-size(14px);
+          }
+        }
+      }
+
+      &.min {
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &.best {
+        text-align: right;
+        right: 6px;
+      }
+    }
+  }
+}
+
+.block-shipping {
+
+  .block-info__body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 60px;
+    }
+
+    h5 {
+      @include font-size(12px);
+      color: $color-title-blue;
+      text-transform: uppercase;
+      text-align: right;
+    }
+
+  }
+
+  .shipping__progress {
+    @include progress-bar;
+    background: #fff;
+    border: 1px solid $color-title-blue;
+    height: 20px;
+    margin-bottom: 36px;
+
+    .progress__milestone {
+      @include font-size(10px);
+      position: absolute;
+      top: 17px;
+      color: #686868;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 500;
+      white-space: nowrap;
+      line-height: normal;
+
+      &.completed {
+        left: 100%;
+        transform: translateX(-50%);
+      }
+
+      &.finish {
+        right: 0;
+        text-align: right;
+        color: $color-title-blue;
+        text-transform: none;
+        padding-top: 10px;
+
+        @include media-breakpoint-down(sm) {
+          padding-top: 44px;
+        }
+
+      }
+
+      .milestone__point {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: $color-title-blue;
+        margin: 0 auto 6px;
+      }
+
+    }
+
+  }
+}
+
+.campaing-name-mobile-only {
+  @include avenir-blue-title;
+  display: none;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    margin-top: 20px;
+  }
+}

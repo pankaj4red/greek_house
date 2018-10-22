@@ -1,0 +1,194 @@
+
+@mixin rockwell-extra-large-header {
+  @include font-family-rockwell;
+  @include font-color-blue;
+  @include font-size-extra-large-header;
+  @include font-spacing(6.5px);
+  @include font-upper;
+}
+
+@mixin rockwell-extra-large-header-reversed {
+  @include font-family-rockwell;
+  @include font-color-white;
+  @include font-size-large-header;
+  @include font-spacing(6.5px);
+}
+
+@mixin rockwell-large-header {
+  @include font-family-rockwell;
+  @include font-color-blue;
+  @include font-size-large-header;
+  @include font-spacing(6.5px);
+  @include font-upper;
+}
+
+@mixin rockwell-standard-header {
+  @include font-family-rockwell;
+  @include font-color-blue;
+  @include font-size-header;
+  @include font-spacing(3.5px);
+  @include font-upper;
+}
+
+@mixin rockwell-small-header {
+  @include font-family-rockwell;
+  @include font-color-blue;
+  @include font-size-header-xxs;
+  @include font-spacing(2px);
+  @include font-upper;
+}
+
+@mixin rockwell-sub-header {
+  @include font-family-rockwell;
+  @include font-color-slate-grey;
+  @include font-size-sub-header;
+  @include font-spacing(3px);
+  @include font-upper;
+}
+
+@mixin rockwell-xs-header {
+  @include font-family-rockwell;
+  @include font-color-black;
+  @include font-size-header-xs;
+  @include font-spacing(2px);
+  @include font-upper;
+}
+
+@mixin avenir-minor-header {
+  @include font-family-avenir;
+  @include font-color-black;
+  @include font-size-regular;
+  @include font-spacing(0.75);
+  @include font-semi-bold;
+}
+
+@mixin avenir-minor-header-selected {
+  @include font-family-avenir;
+  @include font-color-black;
+  @include font-size-regular;
+  @include font-spacing(1px);
+  @include font-semi-bold;
+  @include font-upper;
+}
+
+@mixin avenir-minor-header-deselected {
+  @include font-family-avenir;
+  @include font-color-slate-grey;
+  @include font-size-regular;
+  @include font-spacing(1px);
+  font-weight: 500;
+  @include font-upper;
+}
+
+@mixin avenir-caption {
+  @include font-family-avenir;
+  @include font-color-black;
+  @include font-size-large;
+  @include font-spacing(1.25px);
+  @include font-semi-bold;
+  @include font-upper;
+}
+
+@mixin avenir-regular-large {
+  @include font-family-avenir;
+  @include font-color-black;
+  @include font-size-large;
+  @include font-spacing(0.75px);
+}
+
+@mixin avenir-regular-large-reversed {
+  @include font-family-avenir;
+  @include font-color-white;
+  @include font-size-large;
+  @include font-spacing(0.75px);
+}
+
+@mixin avenir-regular-space {
+  @include font-family-avenir;
+  @include font-color-space-grey;
+  @include font-size-regular;
+  @include font-spacing(0.75px);
+}
+
+@mixin avenir-regular {
+  @include font-family-avenir;
+  @include font-color-black;
+  @include font-size-regular;
+  @include font-spacing(0.75px);
+}
+
+@mixin avenir-regular-medium {
+  @include font-family-avenir;
+  @include font-color-black;
+  @include font-size-medium;
+  @include font-spacing(0.75px);
+}
+
+@mixin avenir-regular-reversed {
+  @include font-family-avenir;
+  @include font-color-white;
+  @include font-size-regular;
+  @include font-spacing(0.75px);
+}
+
+@mixin avenir-regular-bold {
+  @include font-family-avenir;
+  @include font-color-black;
+  @include font-size-regular;
+  @include font-spacing(0.75px);
+  @include font-semi-bold;
+}
+
+@mixin avenir-regular-bold-upper {
+  @include font-family-avenir;
+  @include font-color-black;
+  @include font-size-regular;
+  @include font-spacing(0.75px);
+  @include font-semi-bold;
+  @include font-upper;
+}
+
+@mixin avenir-subtitle {
+  @include font-family-avenir;
+  @include font-color-space-grey;
+  @include font-size-large;
+}
+
+@mixin avenir-small {
+  @include font-family-avenir;
+  @include font-color-black;
+  @include font-size-small;
+  @include font-spacing(0.75px);
+}
+
+@mixin avenir-blue-title {
+  @include font-family-avenir;
+  @include font-upper;
+  @include font-spacing(0.05rem);
+  @include font-size(16px);
+  font-weight: 500;
+  color: $color-title-blue;
+}
+
+@mixin avenir-grey-title {
+  @include font-upper;
+  @include font-spacing(0.1rem);
+  @include font-size(16px);
+  font-weight: 500;
+  color: $color-info-title-grey;
+}
+
+@mixin campaign-subtitle {
+  @include font-size(16px);
+  @include font-upper;
+  @include font-spacing(0.1rem);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px $padding-big-block-lr;
+  background: $color-bg-light-grey;
+
+  @include media-breakpoint-down(xs) {
+    padding: 20px $padding-block-lr;
+    flex-wrap: wrap;
+  }
+}

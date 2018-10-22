@@ -1,0 +1,52 @@
+#gh-modal {
+  padding: 15px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+
+  .modal-dialog {
+    border-left: 5px solid #3498db;
+    background: #F8F8F8;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 0.3rem;
+
+    .modal-content {
+      width: auto;
+      box-shadow: none;
+      border-radius: 0;
+      border: 0;
+      background-color: transparent;
+
+      .modal-ajax-content {
+        position: relative;
+
+        .modal-loading {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 120px;
+          height: 120px;
+          margin-top: -60px;
+          margin-left: -60px;
+        }
+      }
+    }
+
+    .close {
+      background: transparent url(/images/modal/close.png) no-repeat center center;
+      height: 45px;
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      width: 45px;
+      cursor: pointer;
+      z-index: 8040;
+
+      &:active, &:hover, &:focus {
+        color: #23527c;
+        text-decoration: underline;
+        outline: 0;
+      }
+    }
+  }
+}
